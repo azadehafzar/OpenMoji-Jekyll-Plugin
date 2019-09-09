@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require File.expand_path("../lib/jemoji.rb", __dir__)
+require File.expand_path("../lib/jekyll-openmoji.rb", __dir__)
 
 RSpec.configure do |config|
   FIXTURES_DIR = File.expand_path("fixture_site", __dir__)

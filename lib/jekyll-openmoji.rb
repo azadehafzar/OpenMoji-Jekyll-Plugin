@@ -7,8 +7,10 @@ require "html/pipeline"
 
 module Jekyll
   class Emoji
-    OPENMOJI_ASSET_HOST_URL = "https://cdn.jsdeliver.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin"
+    OPENMOJI_ASSET_HOST_URL = "https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest"
     ASSET_PATH = "/images/color/svg"
+    DEFAULT_DIR = "/emoji"
+    FILE_NAME = "/:file_name"
     BODY_START_TAG = "<body"
     OPENING_BODY_TAG_REGEX = %r!<body(.*?)>\s*!m.freeze
 
@@ -19,20 +21,40 @@ module Jekyll
         doc.output = if doc.output.include? BODY_START_TAG
                        replace_document_body(doc)
                      else
-                       src = emoji_src(doc.site.config)
-                       filter_with_emoji(src).call(doc.output)[:output].to_s
+                       src_root = emoji_src_root(doc.site.config)
+                       asset_path = emoji_asset_path(doc.site.config)
+                       filter_with_emoji(src_root, asset_path).call(doc.output)[:output].to_s
                      end
       end
 
-      # Public: Create or fetch the filter for the given {{src}} asset root.
+      # Public: Create or fetch the filter for the given {{src_root}} asset root.
       #
-      # src - the asset root URL (e.g. https://github.githubassets.com/images/icons/)
+      # src_root - the asset root URL (e.g. https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest)
+      # asset_path - the asset sub-path of src (e.g. "/images/color/svg")
+      # 
+      # if asset_path it's not provided by user in _config.yml file, html pipeline module
+      # will default it to value "emoji"
+      # 
+      # examples of _config.yml:
+      #   1. user provided all URLs:
+      #       emoji:
+      #           src: https://example.com/asset
+      #           asset: /images/png
+      #   emoji files will serve from https://example.com/asset/images/png
+      #
+      #   2. user provided just src:
+      #       emoji:
+      #           src: https://example.com/asset
+      #   emoji files will serve from https://example.com/emoji
+      #
+      #   3. user provided nothing:
+      #   emoji files will serve from https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg
       #
       # Returns an HTML::Pipeline instance for the given asset root.
-      def filter_with_emoji(src)
-        filters[src] ||= HTML::Pipeline.new([
+      def filter_with_emoji(src_root, asset_path)
+        filters[src_root] ||= HTML::Pipeline.new([
           HTML::Pipeline::EmojiFilter,
-        ], :asset_root => src, :img_attrs => { :align => nil })
+        ], :asset_root => src_root, :asset_path => asset_path, :img_attrs => { :align => nil })
       end
 
       # Public: Filters hash where the key is the asset root source.
@@ -50,12 +72,33 @@ module Jekyll
       #
       # Returns a full URL to use as the asset root URL. Defaults to the root
       # URL for assets provided by an ASSET_HOST_URL environment variable,
-      # otherwise the root URL for emoji assets at assets-cdn.github.com.
-      def emoji_src(config = {})
+      # otherwise the root URL for emoji assets at https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest.
+      def emoji_src_root(config = {})
         if config.key?("emoji") && config["emoji"].key?("src")
           config["emoji"]["src"]
         else
           default_asset_root
+        end
+      end
+
+      # Public: Calculate the asset root source for the given config.
+      # The custom emoji asset root can be defined in the config as
+      # emoji.asset.
+      #
+      # If emoji.asset isn't defined, its value will explicitly set to "emoji"
+      #
+      # config - the hash-like configuration of the document's site
+      #
+      # Returns a string to use as the asset path. Defaults to the ASSET_PATH.
+      def emoji_asset_path(config = {})
+        if config.key?("emoji") && config["emoji"].key?("src")
+          if config["emoji"].key?("asset")
+            config["emoji"]["asset"].chomp("/") + "#{FILE_NAME}"
+          else
+            "#{DEFAULT_DIR}#{FILE_NAME}"
+          end
+        else
+          "#{ASSET_PATH}#{FILE_NAME}"
         end
       end
 
@@ -75,17 +118,18 @@ module Jekyll
         if !ENV["ASSET_HOST_URL"].to_s.empty?
           # Ensure that any trailing "/" is trimmed
           asset_host_url = ENV["ASSET_HOST_URL"].chomp("/")
-          "#{asset_host_url}#{ASSET_PATH}"
+          asset_host_url.to_s
         else
-          "#{OPENMOJI_ASSET_HOST_URL}#{ASSET_PATH}"
+          OPENMOJI_ASSET_HOST_URL.to_s
         end
       end
 
       def replace_document_body(doc)
-        src                 = emoji_src(doc.site.config)
+        src_root = emoji_src_root(doc.site.config)
+        asset_path = emoji_asset_path(doc.site.config)
         head, opener, tail  = doc.output.partition(OPENING_BODY_TAG_REGEX)
         body_content, *rest = tail.partition("</body>")
-        processed_markup    = filter_with_emoji(src).call(body_content)[:output].to_s
+        processed_markup    = filter_with_emoji(src_root, asset_path).call(body_content)[:output].to_s
         String.new(head) << opener << processed_markup << rest.join
       end
     end

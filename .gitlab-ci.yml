@@ -8,14 +8,14 @@ default:
     - cd script
     - chmod +x ci-setup
     - chmod +x bootstrap
-    - ci-setup
-    - bootstrap
+    - ./ci-setup
+    - ./bootstrap
 
 test:
   stage: test
   before_script:
-    - chmod +x ./script/ci-build
-  script: ./script/ci-build
+    - chmod +x ./ci-build
+  script: ./ci-build
   only:
     - master
     - merge_requests
@@ -23,7 +23,7 @@ test:
 deploy:
   stage: deploy
   before_script:
-    - chmod +x ./script/deploy
-  script: ./script/deploy
+    - chmod +x ./deploy
+  script: ./deploy
   only:
     - master

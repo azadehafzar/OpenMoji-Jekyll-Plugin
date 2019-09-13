@@ -1,7 +1,7 @@
 <p align="center">
   <br>
   <a href="#">
-    <img src="images/logo/OpenMoji-logo.svg" width="100"/>
+    <img src="images/logo/OpenMoji-logo.svg" width="100" alt="OpenMoji Jekyll Plugin"/>
   </a>
 </p>
 

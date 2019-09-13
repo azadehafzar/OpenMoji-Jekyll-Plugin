@@ -13,7 +13,11 @@ Gem::Specification.new do |s|
 
   s.homepage = "https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin"
   s.licenses = ["GPL-3.0"]
-  s.files    = ["lib/jekyll-openmoji.rb"]
+  s.files = Dir[
+      "README.md",
+      "LICENSE",
+      "lib/jekyll-openmoji.rb",
+  ]
 
   s.required_ruby_version = ">= 2.3.0"
 

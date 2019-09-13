@@ -20,10 +20,10 @@ test:
     - master
     - merge_requests
 
-deploy:
+deploy-gem:
   stage: deploy
   before_script:
-    - chmod +x ./deploy
-  script: ./deploy
+    - chmod +x ./deploy-gem
+  script: ./deploy-gem
   only:
     - master

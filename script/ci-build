@@ -1,4 +1,4 @@
 #! /bin/sh
 
-script/fmt
-script/test
+script/test-style
+script/test-module

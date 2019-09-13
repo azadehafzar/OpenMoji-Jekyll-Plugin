@@ -1,0 +1,22 @@
+stages:
+  - test
+  - deploy
+
+default:
+  image: ubuntu:latest
+  before_script:
+    - script/ci-setup
+    - script/bootstrap
+
+test:
+  stage: test
+  script: script/ci-build
+  only:
+    - master
+    - merge_requests
+
+deploy:
+  stage: deploy
+  script: script/deploy
+  only:
+    - master

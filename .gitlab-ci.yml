@@ -5,7 +5,7 @@ stages:
 default:
   image: ubuntu:latest
   before_script:
-    - ls
+    - ls -lsa
     - chmod +x ./script/ci-setup
     - chmod +x ./script/ci-setup
     - ./script/ci-setup

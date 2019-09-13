@@ -1,7 +1,7 @@
 <p align="center">
   <br>
   <a href="#">
-    <img src="https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin/images/logo/OpenMoji-logo.svg" width="100"/>
+    <img src="https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin/blob/master/images/logo/OpenMoji-logo.svg" width="100"/>
   </a>
 </p>
 
@@ -100,9 +100,9 @@ However you can alter the default path in `_config.yml` to serve from external s
 
 Emoji files names should be unicode strings, for example name of this emoji 😄 image file must be: 1f604
 
-## Countribution
+## Contribution
 
-If you want to contribute to this project, please read [CONTRIBUTION](CONTRIBUTION.md).
+If you want to contribute to this project, please read [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Code of Conduct
 
@@ -117,5 +117,5 @@ Visit the [Roadmap](ROADMAP.md) to keep track of which features we are currently
 Licensed under the [GPL v3](LICENSE).
 
 ## Attribution
-1. All default emojis designed by [OpenMoji](https://openmoji.org)- the open source emoji and icon project. License: CC BY-SA 4.0
+1. All default emojis designed by [OpenMoji](https://openmoji.org) - the open source emoji and icon project. License: CC BY-SA 4.0
 2. This project is a fork of [Jemoji](https://github.com/jekyll/jemoji).

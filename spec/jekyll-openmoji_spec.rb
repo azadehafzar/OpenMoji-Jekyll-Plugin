@@ -124,7 +124,7 @@ RSpec.describe(Jekyll::Emoji) do
     end
 
     it "respects the new base when emojifying" do
-      expect(basic_post.output).to eql(para(result.sub("#{default_src}#{default_asset_path}", emoji_src_root + "#{default_directory}")))
+      expect(basic_post.output).to eql(para(result.sub("#{default_src}#{default_asset_path}", emoji_src_root + default_directory.to_s)))
     end
   end
 

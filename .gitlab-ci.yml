@@ -5,15 +5,15 @@ stages:
 default:
   image: ubuntu:latest
   before_script:
-    - chmode +x script/ci-setup
-    - chmode +x script/ci-setup
+    - chmod +x script/ci-setup
+    - chmod +x script/ci-setup
     - script/ci-setup
     - script/bootstrap
 
 test:
   stage: test
   before_script:
-    - chmode +x script/ci-build
+    - chmod +x script/ci-build
   script: script/ci-build
   only:
     - master
@@ -22,7 +22,7 @@ test:
 deploy:
   stage: deploy
   before_script:
-    - chmode +x script/deploy
+    - chmod +x script/deploy
   script: script/deploy
   only:
     - master

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "jekyll"
-require 'gemoji'
+require "gemoji"
 require "negarmoji"
 require "html/pipeline"
 
@@ -31,10 +31,10 @@ module Jekyll
       #
       # src_root - the asset root URL (e.g. https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest)
       # asset_path - the asset sub-path of src (e.g. "/images/color/svg")
-      # 
+      #
       # if asset_path it's not provided by user in _config.yml file, html pipeline module
       # will default it to value "emoji"
-      # 
+      #
       # examples of _config.yml:
       #   1. user provided all URLs:
       #       emoji:
@@ -93,7 +93,7 @@ module Jekyll
       def emoji_asset_path(config = {})
         if config.key?("emoji") && config["emoji"].key?("src")
           if config["emoji"].key?("asset")
-            config["emoji"]["asset"].chomp("/") + "#{FILE_NAME}"
+            config["emoji"]["asset"].chomp("/") + FILE_NAME.to_s
           else
             "#{DEFAULT_DIR}#{FILE_NAME}"
           end
@@ -129,7 +129,7 @@ module Jekyll
         asset_path = emoji_asset_path(doc.site.config)
         head, opener, tail  = doc.output.partition(OPENING_BODY_TAG_REGEX)
         body_content, *rest = tail.partition("</body>")
-        processed_markup    = filter_with_emoji(src_root, asset_path).call(body_content)[:output].to_s
+        processed_markup = filter_with_emoji(src_root, asset_path).call(body_content)[:output].to_s
         String.new(head) << opener << processed_markup << rest.join
       end
     end

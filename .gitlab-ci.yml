@@ -5,11 +5,11 @@ stages:
 default:
   image: ubuntu:latest
   before_script:
-    - ls -lsa
-    - chmod +x ./script/ci-setup
-    - chmod +x ./script/ci-setup
-    - ./script/ci-setup
-    - ./script/bootstrap
+    - cd script
+    - chmod +x ci-setup
+    - chmod +x bootstrap
+    - ci-setup
+    - bootstrap
 
 test:
   stage: test

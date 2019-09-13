@@ -5,16 +5,17 @@ stages:
 default:
   image: ubuntu:latest
   before_script:
-    - chmod +x script/ci-setup
-    - chmod +x script/ci-setup
-    - script/ci-setup
-    - script/bootstrap
+    - ls
+    - chmod +x ./script/ci-setup
+    - chmod +x ./script/ci-setup
+    - ./script/ci-setup
+    - ./script/bootstrap
 
 test:
   stage: test
   before_script:
-    - chmod +x script/ci-build
-  script: script/ci-build
+    - chmod +x ./script/ci-build
+  script: ./script/ci-build
   only:
     - master
     - merge_requests
@@ -22,7 +23,7 @@ test:
 deploy:
   stage: deploy
   before_script:
-    - chmod +x script/deploy
-  script: script/deploy
+    - chmod +x ./script/deploy
+  script: ./script/deploy
   only:
     - master

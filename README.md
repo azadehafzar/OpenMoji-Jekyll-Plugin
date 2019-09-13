@@ -1,7 +1,7 @@
 <p align="center">
   <br>
   <a href="#">
-    <img src="https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin/blob/master/images/logo/OpenMoji-logo.png" width="100"/>
+    <img src="images/logo/OpenMoji-logo.svg" width="100"/>
   </a>
 </p>
 

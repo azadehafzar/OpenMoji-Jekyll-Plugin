@@ -35,4 +35,5 @@ command -v git
 echo "Finished installing git\n\n"
 
 # setup shell script permissions
+chmod +x script/ci-bootstrap
 chmod +x script/ci-test

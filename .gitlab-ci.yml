@@ -4,9 +4,13 @@ stages:
 
 default:
   image: ubuntu:latest
+  cache:
+    paths:
+      - vendor/
   before_script:
     - chmod +x script/ci-setup
     - script/ci-setup
+    - script/ci-bootstrap
 
 test:
   stage: test

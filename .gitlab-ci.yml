@@ -12,10 +12,9 @@ test:
   stage: test
 #  before_script:
   script:
-    - ls -lsa
-    - git --version
+    # this is needed to start using rvm
     - source /usr/local/rvm/scripts/rvm
-    - rvm
+    - script/ci-test
   only:
     - master
     - merge_requests

@@ -1,4 +1,0 @@
-#! /bin/sh
-
-script/test-style
-script/test-module

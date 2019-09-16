@@ -1,0 +1,7 @@
+#!/bin/sh
+
+chmod +x script/test-style
+chmod +x script/test-module
+
+script/test-style
+script/test-module

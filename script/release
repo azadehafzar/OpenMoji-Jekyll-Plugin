@@ -13,7 +13,7 @@ if git diff --quiet lib/jekyll-openmoji/version.rb; then
   exit 1
 fi
 
-script/ci-build
+script/ci-test
 
 version="$(gem build jekyll-openmoji.gemspec | awk '/Version:/ { print $2 }')"
 git commit lib/jekyll-openmoji/version.rb -m "jekyll-openmoji $version"

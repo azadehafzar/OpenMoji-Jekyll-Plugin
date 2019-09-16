@@ -4,24 +4,35 @@
 # Installs required programs fo ci jobs
 
 # install curl
+echo "Install curl\n"
 apt-get update -y
 apt-get install -y curl
 curl --version
 command -v curl
+echo "Finished installing curl\n\n"
 
 # install gnupg
+echo "Install gnupg\n"
 apt-get install -y gnupg
 gpg --version
 command -v gpg
+echo "Finished installing gnupg\n\n"
 
 # install ruby version manager (rvm) using curl, then install stable ruby with rvm
+echo "Install rvml\n"
 gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source /usr/local/rvm/scripts/rvm
 rvm -v
 command -v rvm
+echo "Finished installing rvm\n\n"
 
 # install git
+echo "Install git\n"
 apt-get install -y git-core
 git --version
 command -v git
+echo "Finished installing git\n\n"
+
+# setup shell script permissions
+chmod +x script/ci-test

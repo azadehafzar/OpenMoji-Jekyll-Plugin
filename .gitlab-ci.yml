@@ -17,6 +17,7 @@ test:
 #    - chmod +x ./ci-build
   script:
     - ls -lsa
+    - chmod +x script/ci-setup
     - script/ci-setup
   only:
     - master

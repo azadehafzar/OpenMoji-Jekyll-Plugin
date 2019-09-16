@@ -8,11 +8,9 @@ default:
     paths:
       - vendor/
   before_script:
-    #- chmod +x script/ci-setup
-    #- script/ci-setup
-    # this is needed to start using rvm
-    #- source /usr/local/rvm/scripts/rvm
-    # install gems
+    # upgrade bundler to latest version
+    - gem install bundler
+    # install required gems
     - bundle install --path vendor
 
 test:

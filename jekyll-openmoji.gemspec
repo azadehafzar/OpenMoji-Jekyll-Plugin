@@ -11,13 +11,9 @@ Gem::Specification.new do |spec|
                      and support for various emoji image file sources and extensions)"
   spec.summary     = "OpenMoji emoji plugin for Jekyll"
   spec.licenses    = "GPL-3.0"
-  spec.files = Dir[
-      "lib/*.rb",
-      "LICENSE",
-      "*.md",
-  ]
-  spec.require_paths = ["lib"]
+  spec.files = Dir["lib/*.rb", "LICENSE", "*.md"]
 
+  spec.require_paths = ["lib"]
   spec.required_ruby_version = ">= 2.3.0"
 
   spec.add_dependency "gemoji", "~> 3.0"

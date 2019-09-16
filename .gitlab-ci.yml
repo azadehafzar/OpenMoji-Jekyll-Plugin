@@ -10,14 +10,15 @@ default:
   before_script:
     - chmod +x script/ci-setup
     - script/ci-setup
-    - script/ci-bootstrap
+    # this is needed to start using rvm
+    - source /usr/local/rvm/scripts/rvm
+    # install gems
+    - bundle install --path vendor
 
 test:
   stage: test
 #  before_script:
   script:
-    # this is needed to start using rvm
-    - source /usr/local/rvm/scripts/rvm
     - script/ci-test
   only:
     - master

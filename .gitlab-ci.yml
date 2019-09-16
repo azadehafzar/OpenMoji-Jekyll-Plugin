@@ -13,6 +13,8 @@ test:
 #  before_script:
   script:
     - ls -lsa
+    - git --version
+    - source /usr/local/rvm/scripts/rvm
     - rvm
   only:
     - master

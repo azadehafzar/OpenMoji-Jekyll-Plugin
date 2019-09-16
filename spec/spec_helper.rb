@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# start code coverage tracker
+require "simplecov"
+SimpleCov.start
+
 require File.expand_path("../lib/jekyll-openmoji.rb", __dir__)
 
 RSpec.configure do |config|

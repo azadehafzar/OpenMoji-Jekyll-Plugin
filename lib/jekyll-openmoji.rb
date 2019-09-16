@@ -6,9 +6,6 @@ require "negarmoji"
 require "html/pipeline"
 
 module Jekyll
-  module JekyllOpenMoji
-    VERSION = "0.0.2"
-  end
   class Emoji
     OPENMOJI_ASSET_HOST_URL = "https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest"
     ASSET_PATH = "/images/color/svg"

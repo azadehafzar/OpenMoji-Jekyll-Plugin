@@ -4,26 +4,27 @@ stages:
 
 default:
   image: ubuntu:latest
-  before_script:
-    - cd script
-    - chmod +x ci-setup
-    - chmod +x bootstrap
-    - ./ci-setup
-    - ./bootstrap
+#  before_script:
+#    - cd script
+#    - chmod +x ci-setup
+#    - chmod +x bootstrap
+#    - ./ci-setup
+#    - ./bootstrap
 
 test:
   stage: test
-  before_script:
-    - chmod +x ./ci-build
-  script: ./ci-build
+#  before_script:
+#    - chmod +x ./ci-build
+  script:
+    - ls -lsa
   only:
     - master
     - merge_requests
 
-deploy-gem:
-  stage: deploy
-  before_script:
-    - chmod +x ./deploy-gem
-  script: ./deploy-gem
-  only:
-    - master
+#deploy-gem:
+#  stage: deploy
+#  before_script:
+#    - chmod +x ./deploy-gem
+#  script: ./deploy-gem
+#  only:
+#    - master

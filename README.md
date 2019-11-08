@@ -8,16 +8,56 @@
 <h1 align="center">OpenMoji Jekyll Plugin</h1>
 <h3 align="center">Beautiful OpenMoji emojis on your Jekyll websites.</h3>
 <p align="center">
-<a href="https://openmoji.org">OpenMoji</a> is a free and open source emoji library which can be used
- for variety of purposes.</p>
+    <a href="https://openmoji.org">
+        OpenMoji
+    </a> 
+    is a free and open source emoji library which can be used
+    for variety of purposes.
+</p>
 
 <p align="center">
-  <a title="Open Source" href="https://opensource.com/resources/what-open-source/">
-    <img src="https://img.shields.io/badge/Open%20Source-Forever-brightgreen?style=flat-square" alt="Open Source">
+  <a title="Open Source" href="https://opensource.com/resources/what-open-source" target="_blank">
+    <img src="https://img.shields.io/badge/Open%20Source-Forever-brightgreen?logo=open-source-initiative&style=flat-square" alt="Open Source">
   </a>
-  <a title="License: GPL v3" href="https://www.opensource.org/licenses/GPL-3.0">
-    <img src="https://img.shields.io/badge/License-GPL%20v3-blue?style=flat-square&logo=gnu" alt="License: GPL v3">
+  <a title="License: GPLv3" href="https://www.opensource.org/licenses/GPL-3.0" target="_blank">
+    <img src="https://img.shields.io/github/license/azadeh-afzar/OpenMoji-Jekyll-Plugin?logo=gnu&style=flat-square" alt="License: GPLv3">
   </a>
+  <a title="Language counter" href="#" target="_blank">
+    <img src="https://img.shields.io/github/languages/count/azadeh-afzar/OpenMoji-Jekyll-Plugin?logo=gitlab&style=flat-square" alt="Language counter">
+  </a>
+  <a title="Top language" href="#" target="_blank">
+    <img src="https://img.shields.io/github/languages/top/azadeh-afzar/OpenMoji-Jekyll-Plugin?logo=gitlab&style=flat-square" alt="Top language">
+  </a>
+  
+  <br>
+  
+  <a title="Code Quality: Codefactor.io" href="https://www.codefactor.io/repository/github/azadeh-afzar/openMoji-jekyll-plugin" target="_blank">
+    <img src="https://www.codefactor.io/repository/github/azadeh-afzar/openMoji-jekyll-plugin/badge?style=flat-square" alt="CodeFactor"/>
+  </a>
+  <a title="Code Quality: CodeClimate.com" href="https://codeclimate.com/github/azadeh-afzar/OpenMoji-Jekyll-Plugin/maintainability" target="_blank">
+    <img src="https://img.shields.io/codeclimate/maintainability/azadeh-afzar/OpenMoji-Jekyll-Plugin?logo=code-climate&style=flat-square" alt="CodeClimate rating"/>
+  </a>
+  <a title="Code Technical Debt: CodeClimate.com" href="https://codeclimate.com/github/azadeh-afzar/OpenMoji-Jekyll-Plugin/maintainability" target="_blank">
+    <img src="https://img.shields.io/codeclimate/tech-debt/azadeh-afzar/OpenMoji-Jekyll-Plugin?logo=code-climate&style=flat-square" alt="CodeClimate technical debt"/>
+  </a>
+  <a title="Code Issues: CodeClimate.com" href="https://codeclimate.com/github/azadeh-afzar/OpenMoji-Jekyll-Plugin/maintainability" target="_blank">
+    <img src="https://img.shields.io/codeclimate/issues/azadeh-afzar/OpenMoji-Jekyll-Plugin?logo=code-climate&style=flat-square" alt="CodeClimate issues"/>
+  </a>
+  
+  <br>
+
+  <a title="GitLab: pipeline status" href="https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin/commits/master" target="_blank">
+    <img src="https://img.shields.io/gitlab/pipeline/Web-Development/OpenMoji-Jekyll-Plugin?gitlab_url=https%3A%2F%2Fgitlab.com%2FAzadeh-Afzar&logo=gitlab&style=flat-square"  alt="pipeline status" />
+  </a>
+  <a title="Travis CI: build status" href="https://travis-ci.org/azadeh-afzar/OpenMoji-Jekyll-Plugin" target="_blank">
+    <img src="https://img.shields.io/travis/azadeh-afzar/OpenMoji-Jekyll-Plugin/master?logo=travis&style=flat-square"  alt="travis build status" />
+  </a>
+  <a title="Test Coverage: CodeClimate.com" href="https://codeclimate.com/github/azadeh-afzar/OpenMoji-Jekyll-Plugin" target="_blank">
+    <img src="https://img.shields.io/codeclimate/coverage/azadeh-afzar/OpenMoji-Jekyll-Plugin?logo=code-climate&style=flat-square" alt="CodeClimate"/>
+  </a>
+  
+  <br>
+
   <a title="OpenMoji Version" href="https://github.com/hfg-gmuend/openmoji/releases/tag/12.0.0">
     <img src="https://img.shields.io/badge/OpenMoji-v12.0.0-yellow?style=flat-square" alt="OpenMoji Version">
   </a>
@@ -27,9 +67,12 @@
   <a title="jsDelivr CDN" href="https://www.jsdelivr.com/package/gh/azadeh=afzar/OpenMoji-Jekyll-Plugin">
     <img src="https://data.jsdelivr.com/v1/package/gh/azadeh=afzar/OpenMoji-Jekyll-Plugin/badge" alt="jsDelivr CDN">
   </a>
-  <br>
-  <br>
 </p>
+
+> If you are viewing this repository on GitHub, this GitHub repository is a mirror of the OpenMoji Jekyll Plugin,
+> the main repository is on 
+><a href="https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin">GitLab</a>, all developments and
+>discussions, issue tracking and merge requests takes place in GitLab.  
 
 > This project is a fork of <a href="https://github.com/jekyll/jeomi">Jemoji</a>. It's also independent from OpenMoji project.
 
@@ -69,10 +112,11 @@ you can specify so in your `_config.yml` file:
 
 ```yaml
 emoji:
-  # src key is required .
+  # for other emoji packs providing a src key is required.
   # images will be served from this base address
   # it must be a valid URL, if you don't provide a string to src key
-  # plugin will ignore this settings and uses default settings.
+  # plugin will ignore this settings and uses default settings which
+  # is OpenMoji emoji pack.
   src: "https://www.emojisource.com"
 
   # asset key is optional.
@@ -80,10 +124,17 @@ emoji:
   # if you don't provide the asset value, it will be defaulted to "emoji".
   asset: "/color/svg"
 
-# final path will be  "https://www.emojisource.com/color/svg" and
-# emoji images will serve from this address.
-# in case of no asset value, final path would be  "https://www.emojisource.com/color/svg"emoji
+  # final path will be  "https://www.emojisource.com/color/svg" and
+  # emoji images will serve from this address.
+  # in case of no asset value, final path would be  "https://www.emojisource.com/color/svg"emoji
 
+  # MORE CONFIGURATION OPTIONS
+  # all configs below are optional.
+
+  # this plugin default emoji image extension is svg (vector file), but if your emoji source
+  # images are in other formats, you can manually override default extension by using below key
+  # and specify your desired extension (png, jpg, jpeg, bmp, etc).
+  extension: png
 
 ```
 

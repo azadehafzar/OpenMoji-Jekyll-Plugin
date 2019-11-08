@@ -5,14 +5,16 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "jekyll-openmoji/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "jekyll-openmoji"
+  spec.name = "jekyll-openmoji"
   spec.version = Jekyll::Emoji::VERSION
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ["Mohammad Mahdi Baghbani Pourvahid"]
   spec.email       = "MahdiBaghbani@protonmail.com"
   spec.homepage    = "https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin"
-  spec.description = "%q{OpenMoji emoji pack plugin for Jekyll with a powerful configuration options
-                     and support for various emoji image file sources and extensions}"
+  spec.description = "OpenMoji emoji pack plugin for Jekyll with powerful configuration options
+                     and support for various emoji image file sources and extensions. in addition
+                     to OpenMoji emojis, you can also configure it to use any emoji source
+                     available."
   spec.summary     = "OpenMoji emoji plugin for Jekyll"
   spec.licenses    = "GPL-3.0"
 

@@ -11,5 +11,5 @@ set -ex
 chmod +x script/test-style.sh
 chmod +x script/test-module.sh
 
-script/test-style
-script/test-module
+script/test-style.sh
+script/test-module.sh

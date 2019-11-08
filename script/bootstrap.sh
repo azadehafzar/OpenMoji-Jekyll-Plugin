@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage: script/ci-bootstrap
+# Usage: script/bootstrap
 #
 # Installs required gems
 

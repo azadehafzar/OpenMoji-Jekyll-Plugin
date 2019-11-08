@@ -17,7 +17,7 @@ test:
   stage: test
 #  before_script:
   script:
-    - script/ci-test
+    - script/ci-test.sh
   only:
     - master
     - merge_requests

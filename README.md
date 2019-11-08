@@ -49,9 +49,6 @@
   <a title="GitLab: pipeline status" href="https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin/commits/master" target="_blank">
     <img src="https://img.shields.io/gitlab/pipeline/Web-Development/OpenMoji-Jekyll-Plugin?gitlab_url=https%3A%2F%2Fgitlab.com%2FAzadeh-Afzar&logo=gitlab&style=flat-square"  alt="pipeline status" />
   </a>
-  <a title="Travis CI: build status" href="https://travis-ci.org/azadeh-afzar/OpenMoji-Jekyll-Plugin" target="_blank">
-    <img src="https://img.shields.io/travis/azadeh-afzar/OpenMoji-Jekyll-Plugin/master?logo=travis&style=flat-square"  alt="travis build status" />
-  </a>
   <a title="Test Coverage: CodeClimate.com" href="https://codeclimate.com/github/azadeh-afzar/OpenMoji-Jekyll-Plugin" target="_blank">
     <img src="https://img.shields.io/codeclimate/coverage/azadeh-afzar/OpenMoji-Jekyll-Plugin?logo=code-climate&style=flat-square" alt="CodeClimate"/>
   </a>

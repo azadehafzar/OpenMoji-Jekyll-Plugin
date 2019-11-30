@@ -7,18 +7,20 @@ require "jekyll-openmoji/version"
 Gem::Specification.new do |spec|
   spec.name = "jekyll-openmoji"
   spec.version = Jekyll::Emoji::VERSION
-  spec.platform    = Gem::Platform::RUBY
-  spec.authors     = ["Mohammad Mahdi Baghbani Pourvahid"]
-  spec.email       = "MahdiBaghbani@protonmail.com"
-  spec.homepage    = "https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin"
-  spec.description = "OpenMoji emoji pack plugin for Jekyll with powerful configuration options
-                     and support for various emoji image file sources and extensions. in addition
-                     to OpenMoji emojis, you can also configure it to use any emoji source
-                     available."
-  spec.summary     = "OpenMoji emoji plugin for Jekyll"
-  spec.licenses    = "GPL-3.0"
+  spec.platform = Gem::Platform::RUBY
+  spec.authors = ["Mohammad Mahdi Baghbani Pourvahid"]
+  spec.email = "MahdiBaghbani@protonmail.com"
+  spec.homepage = "https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin"
+  spec.description = "OpenMoji emoji pack plugin for Jekyll with powerful
+                      configuration options and support for various emoji image file
+                      sources and extensions. in addition to OpenMoji emojis, you can
+                      also configure it to use any emoji source available."
+  spec.summary = "OpenMoji emoji plugin for Jekyll"
+  spec.licenses = "GPL-3.0"
 
-  spec.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(images|script|spec)/!) }
+  spec.files = `git ls-files -z`.split("\x0").reject { |f|
+    f.match(%r!^(images|script|spec)/!)
+  }
   spec.executables = spec.files.grep(%r!^bin/!) { |f| File.basename(f) }
   spec.test_files = spec.files.grep(%r!^test/!)
   spec.require_paths = ["lib"]

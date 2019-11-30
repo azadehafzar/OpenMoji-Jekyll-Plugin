@@ -17,8 +17,9 @@ module Jekyll
 
     class << self
       def emojify(doc)
-        return unless doc.output =~ HTML::Pipeline::NegarMojiHtmlPipeline::NegarehEmojiFilter
-                                        .emoji_pattern
+        return unless
+            doc.output =~ HTML::Pipeline::NegarMojiHtmlPipeline::NegarehEmojiFilter
+              .emoji_pattern
 
         doc.output = if doc.output.include? BODY_START_TAG
                        replace_document_body(doc)
@@ -27,14 +28,16 @@ module Jekyll
                        asset_path = emoji_asset_path(doc.site.config)
                        file_extension = emoji_extension(doc.site.config)
                        filter_with_emoji(src_root, asset_path, file_extension)
-                           .call(doc.output)[:output].to_s
+                         .call(doc.output)[:output].to_s
                      end
       end
 
       # Public: Create or fetch the filter for the given {{src_root}} asset root.
       #
       # src_root - the asset root URL (e.g. https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest)
-      # asset_path - the asset sub-path of src (e.g. "/images/color/svg") [default = "emoji"]
+      # asset_path - the asset sub-path of src (e.g. "/images/color/svg")
+      # [default = "emoji"]
+      #
       # extension - the extension of emoji image files, [default = svg ]
       #
       # examples of _config.yml:
@@ -58,8 +61,8 @@ module Jekyll
                 NegarMojiHtmlPipeline::NegarehEmojiFilter],
                                                  :asset_root => src_root,
                                                  :asset_path => asset_path,
-                                                 :extension => file_extension,
-                                                 :img_attrs => {:align => nil})
+                                                 :extension  => file_extension,
+                                                 :img_attrs  => { :align => nil })
       end
 
       # Public: Filters hash where the key is the asset root source.
@@ -131,7 +134,7 @@ module Jekyll
       # Returns true if the doc is written & is HTML.
       def emojiable?(doc)
         (doc.is_a?(Jekyll::Page) || doc.write?) &&
-            doc.output_ext == ".html" || (doc.permalink&.end_with?("/"))
+          doc.output_ext == ".html" || (doc.permalink&.end_with?("/"))
       end
 
       private
@@ -153,7 +156,7 @@ module Jekyll
         head, opener, tail = doc.output.partition(OPENING_BODY_TAG_REGEX)
         body_content, *rest = tail.partition("</body>")
         processed_markup = filter_with_emoji(src_root, asset_path, file_extension)
-                               .call(body_content)[:output].to_s
+          .call(body_content)[:output].to_s
         String.new(head) << opener << processed_markup << rest.join
       end
     end

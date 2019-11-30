@@ -7,12 +7,14 @@ RSpec.describe(Jekyll::Emoji) do
 
   let(:config_overrides) { {} }
   let(:configs) do
-    Jekyll.configuration(config_overrides.merge(
-                           "skip_config_files" => false,
-                           "collections"       => { "docs" => { "output" => true }, "secret" => {} },
-                           "source"            => fixtures_dir,
-                           "destination"       => fixtures_dir("_site")
-                         ))
+    Jekyll.configuration(
+      config_overrides.merge(
+        :skip_config_files => false,
+        :collections       => { :docs => { :output => true }, :secret => {} },
+        :source            => fixtures_dir,
+        :destination       => fixtures_dir("_site")
+      )
+    )
   end
   let(:emoji)       { described_class }
   let(:site)        { Jekyll::Site.new(configs) }
@@ -97,7 +99,7 @@ RSpec.describe(Jekyll::Emoji) do
     )
   end
 
-  it "does not managle layouts" do
+  it "does not mangle layouts" do
     expect(index.output).to eql(fixture("index.html"))
     expect(minified.output).to eql(fixture("minified_index.html"))
   end
@@ -115,7 +117,7 @@ RSpec.describe(Jekyll::Emoji) do
     let(:emoji_src_root) { "http://mine.club" }
     let(:config_overrides) do
       {
-        "emoji" => { "src" => emoji_src_root },
+        :emoji => { :src => emoji_src_root },
       }
     end
 
@@ -124,7 +126,8 @@ RSpec.describe(Jekyll::Emoji) do
     end
 
     it "respects the new base when emojifying" do
-      expect(basic_post.output).to eql(para(result.sub("#{default_src}#{default_asset_path}", emoji_src_root + default_directory.to_s)))
+      expect(basic_post.output).to eql(para(result.sub("#{default_src}#{default_asset_path}",
+                                                       emoji_src_root + default_directory.to_s)))
     end
   end
 

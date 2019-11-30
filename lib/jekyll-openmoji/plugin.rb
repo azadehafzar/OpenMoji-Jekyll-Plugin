@@ -13,7 +13,7 @@ module Jekyll
     FILE_NAME = "/:file_name"
     DEFAULT_EXTENSION = "svg"
     BODY_START_TAG = "<body"
-    OPENING_BODY_TAG_REGEX = %r{!<body(.*?)>\s*!m}.freeze
+    OPENING_BODY_TAG_REGEX = %r!<body(.*?)>\s*!m.freeze
 
     class << self
       def emojify(doc)

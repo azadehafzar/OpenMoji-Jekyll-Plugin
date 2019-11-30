@@ -9,10 +9,10 @@ RSpec.describe(Jekyll::Emoji) do
   let(:configs) do
     Jekyll.configuration(
       config_overrides.merge(
-        :skip_config_files => false,
-        :collections       => { :docs => { :output => true }, :secret => {} },
-        :source            => fixtures_dir,
-        :destination       => fixtures_dir("_site")
+        "skip_config_files" => false,
+        "collections"       => { "docs" => { "output" => true }, "secret" => {} },
+        "source"            => fixtures_dir,
+        "destination"       => fixtures_dir("_site")
       )
     )
   end
@@ -117,7 +117,7 @@ RSpec.describe(Jekyll::Emoji) do
     let(:emoji_src_root) { "http://mine.club" }
     let(:config_overrides) do
       {
-        :emoji => { :src => emoji_src_root },
+        "emoji" => { "src" => emoji_src_root },
       }
     end
 

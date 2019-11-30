@@ -2,21 +2,47 @@ stages:
   - test
   - deploy
 
+# default settings for all ci jobs.
 default:
   image: ruby:latest
   cache:
     paths:
       - vendor/
   before_script:
-    # upgrade bundler to latest version
+    # upgrade bundler to latest version.
     - gem install bundler
-    # install required gems
+    # install dependency gems.
     - bundle install --path vendor
+    # setup ci environment.
+    - script/ci_setup.sh
 
-test:
+# job for testing package on master branch
+# and send test coverage result to codeclimate.
+test_master:
   stage: test
+  before_script:
+    # run code climate test reporter agent.
+    - cc-test-reporter before-build
+  # run tests.
   script:
     - script/test.sh
+  # send test coverage result to codeclimate.
+  after_script:
+    - cc-test-reporter after-build --coverage-input-type simplecov
   only:
     - master
+
+# job for testing package on other branches
+# and merge requests.
+test_branches:
+  stage: test
+  # run tests.
+  script:
+    - script/test.sh
+  # run on branches and merge requests.
+  only:
+    - branches
     - merge_requests
+  # don't run on master branch.
+  except:
+    - master

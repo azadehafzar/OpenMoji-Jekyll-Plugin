@@ -8,8 +8,5 @@
 # -x  Print commands and their arguments as they are executed.
 set -ex
 
-chmod +x script/test_style.sh
-chmod +x script/test_module.sh
-
 script/test_style.sh
 script/test_module.sh

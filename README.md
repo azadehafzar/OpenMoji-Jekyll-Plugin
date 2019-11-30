@@ -6,13 +6,13 @@
 </p>
 
 <h1 align="center">OpenMoji Jekyll Plugin</h1>
-<h3 align="center">Beautiful OpenMoji emojis on your Jekyll websites.</h3>
+<h3 align="center">Bring beautiful OpenMoji emojis to your Jekyll websites.</h3>
 <p align="center">
     <a href="https://openmoji.org">
         OpenMoji
     </a> 
     is a free and open source emoji library which can be used
-    for variety of purposes.
+    for variety of purposes. it is licensed under CC BY-SA 4.0 .
 </p>
 
 <p align="center">
@@ -67,17 +67,19 @@
 </p>
 
 > If you are viewing this repository on GitHub, this GitHub repository is a mirror of the OpenMoji Jekyll Plugin,
-> the main repository is on 
+> the main repository is served on 
 ><a href="https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin">GitLab</a>, all developments and
->discussions, issue tracking and merge requests takes place in GitLab.  
+>discussions, issue tracking and merge requests take place in GitLab.  
 
-> This project is a fork of <a href="https://github.com/jekyll/jeomi">Jemoji</a>. It's also independent from OpenMoji project.
+> This project is a fork of <a href="https://github.com/jekyll/jeomi">Jemoji</a>. 
+> This project is currently independent from main OpenMoji project.
 
 ### Enjoy a free open source emoji package
 Use more than 3,000 emoji from OpenMoji package for free in your jekyll website.
 
 ### Connect to any other emoji source
-Use any available emoji package from a CDN or locally served emoji images by adding only 3 lines to your website's config file.
+Use any available emoji package from a CDN or locally served emoji images by adding
+roughly 5 lines to your website's config file.
 
 ## Quick start
 
@@ -147,7 +149,8 @@ However you can alter the default path in `_config.yml` to serve from external s
 
 ### Notes
 
-Emoji files names should be lowercase unicode strings, for example name of this emoji 😄 image file must be: 1f604
+Emoji files names should be lowercase unicode strings, for example name of this
+emoji 😄 image file must be: 1f604
 
 ## Contribution
 
@@ -159,12 +162,14 @@ Visit the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Roadmap
 
-Visit the [Roadmap](ROADMAP.md) to keep track of which features we are currently working on.
+Visit the [Roadmap](ROADMAP.md) to keep track of which features we are currently
+working on.
 
 ## License
 
 Licensed under the [GPL v3](LICENSE).
 
 ## Attribution
-1. All default emojis designed by [OpenMoji](https://openmoji.org) - the open source emoji and icon project. License: CC BY-SA 4.0
+1. All default emojis designed by [OpenMoji](https://openmoji.org) - the open source
+emoji and icon project. License: CC BY-SA 4.0
 2. This project is a fork of [Jemoji](https://github.com/jekyll/jemoji). License: MIT

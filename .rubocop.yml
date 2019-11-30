@@ -1,6 +1,7 @@
 inherit_from: .rubocop_todo.yml
 
 require: rubocop-jekyll
+
 inherit_gem:
   rubocop-jekyll: .rubocop.yml
 
@@ -8,3 +9,21 @@ AllCops:
   TargetRubyVersion: 2.3
   Exclude:
     - vendor/**/*
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/BlockLength:
+  Max: 50
+
+Metrics/LineLength:
+  Max: 85
+
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+
+

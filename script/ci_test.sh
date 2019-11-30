@@ -1,9 +1,9 @@
 #!/bin/bash
-# Usage: script/ci-test
+# Usage: script/ci_test.sh
 #
-# Runs tests
+# Runs tests.
 
-# set flag for shell execution
+# set flag for shell execution.
 # -e  Exit immediately if a command exits with a non-zero status.
 # -x  Print commands and their arguments as they are executed.
 set -ex

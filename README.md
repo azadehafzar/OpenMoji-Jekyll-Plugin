@@ -119,7 +119,8 @@ emoji:
   # asset key is optional.
   # it will be appended to the end of src keyword to make a complete URL,
   # if you don't provide the asset value, it will be defaulted to "emoji".
-  asset: "/color/svg"
+  # you can also provide an empty string "" if your source doesn't have any asset path.
+  asset: "/color/png"
 
   # final path will be  "https://www.emojisource.com/color/svg" and
   # emoji images will serve from this address.
@@ -128,7 +129,7 @@ emoji:
   # MORE CONFIGURATION OPTIONS
   # all configs below are optional.
 
-  # this plugin default emoji image extension is svg (vector file), but if your emoji source
+  # default emoji image extension is svg (vector file), but if your emoji source
   # images are in other formats, you can manually override default extension by using below key
   # and specify your desired extension (png, jpg, jpeg, bmp, etc).
   extension: png
@@ -137,7 +138,7 @@ emoji:
 
 ## How it works
 
-For all sites emoji images are served from the GitHub.com CDN, with a
+For all sites emoji images are served from a GitHub.com CDN, with a
 base URL of `https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest` and
 asset path of `/images/color/svg`, which results in emoji image URLs like
 `https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f604.svg`.
@@ -146,7 +147,7 @@ However you can alter the default path in `_config.yml` to serve from external s
 
 ### Notes
 
-Emoji files names should be unicode strings, for example name of this emoji 😄 image file must be: 1f604
+Emoji files names should be lowercase unicode strings, for example name of this emoji 😄 image file must be: 1f604
 
 ## Contribution
 
@@ -166,4 +167,4 @@ Licensed under the [GPL v3](LICENSE).
 
 ## Attribution
 1. All default emojis designed by [OpenMoji](https://openmoji.org) - the open source emoji and icon project. License: CC BY-SA 4.0
-2. This project is a fork of [Jemoji](https://github.com/jekyll/jemoji).
+2. This project is a fork of [Jemoji](https://github.com/jekyll/jemoji). License: MIT

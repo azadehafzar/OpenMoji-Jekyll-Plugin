@@ -21,14 +21,15 @@ default:
 test_master:
   stage: test
   before_script:
+    - ls -lsa
     # run code climate test reporter agent.
-    - cc-test-reporter before-build
+    - ./cc-test-reporter before-build
   # run tests.
   script:
     - script/test.sh
   # send test coverage result to codeclimate.
   after_script:
-    - cc-test-reporter after-build --coverage-input-type simplecov
+    - ./cc-test-reporter after-build --coverage-input-type simplecov
   only:
     - master
 

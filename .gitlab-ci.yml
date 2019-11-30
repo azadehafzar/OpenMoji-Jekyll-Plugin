@@ -8,6 +8,11 @@ default:
   cache:
     paths:
       - vendor/
+
+# job for testing package on master branch
+# and send test coverage result to codeclimate.
+test_master:
+  stage: test
   before_script:
     # upgrade bundler to latest version.
     - gem install bundler
@@ -15,12 +20,6 @@ default:
     - bundle install --path vendor
     # setup ci environment.
     - script/ci_setup.sh
-
-# job for testing package on master branch
-# and send test coverage result to codeclimate.
-test_master:
-  stage: test
-  before_script:
     - ls -lsa
     # run code climate test reporter agent.
     - cc-test-reporter before-build

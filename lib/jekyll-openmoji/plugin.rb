@@ -6,20 +6,20 @@ require "html/pipeline"
 require "html/pipeline/negarmoji-pipeline"
 
 module Jekyll
-  class Emoji
+  class Emoji #:nodoc:
     OPENMOJI_ASSET_HOST_URL = "https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest"
     ASSET_PATH = "/images/color/svg"
     DEFAULT_DIR = "/emoji"
     FILE_NAME = "/:file_name"
     DEFAULT_EXTENSION = "svg"
     BODY_START_TAG = "<body"
-    OPENING_BODY_TAG_REGEX = %r!<body(.*?)>\s*!m.freeze
+    OPENING_BODY_TAG_REGEX = %r{!<body(.*?)>\s*!m}.freeze
 
     class << self
       def emojify(doc)
         return unless
             doc.output =~ HTML::Pipeline::NegarMojiHtmlPipeline::NegarehEmojiFilter
-              .emoji_pattern
+                            .emoji_pattern
 
         doc.output = if doc.output.include? BODY_START_TAG
                        replace_document_body(doc)
@@ -156,7 +156,7 @@ module Jekyll
         head, opener, tail = doc.output.partition(OPENING_BODY_TAG_REGEX)
         body_content, *rest = tail.partition("</body>")
         processed_markup = filter_with_emoji(src_root, asset_path, file_extension)
-          .call(body_content)[:output].to_s
+                             .call(body_content)[:output].to_s
         String.new(head) << opener << processed_markup << rest.join
       end
     end

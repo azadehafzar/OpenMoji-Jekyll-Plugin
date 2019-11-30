@@ -6,7 +6,8 @@ require "html/pipeline"
 require "html/pipeline/negarmoji-pipeline"
 
 module Jekyll
-  class Emoji #:nodoc:
+  class Emoji
+    # Extend negarmoji emoji class.
     OPENMOJI_ASSET_HOST_URL = "https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest"
     ASSET_PATH = "/images/color/svg"
     DEFAULT_DIR = "/emoji"

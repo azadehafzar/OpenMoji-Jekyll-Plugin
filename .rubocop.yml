@@ -32,5 +32,8 @@ Metrics/MethodLength:
 Style/HashSyntax:
   EnforcedStyle: hash_rockets
 
+Style/RegexpLiteral:
+  EnforcedStyle: percent_r
+
 Style/StringLiterals:
   EnforcedStyle: double_quotes

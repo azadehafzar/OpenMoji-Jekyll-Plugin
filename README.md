@@ -55,11 +55,11 @@
   
   <br>
 
-  <a title="OpenMoji Version" href="https://github.com/hfg-gmuend/openmoji/releases/tag/12.0.0">
-    <img src="https://img.shields.io/badge/OpenMoji-v12.0.0-yellow?style=flat-square" alt="OpenMoji Version">
+  <a title="OpenMoji Version" href="https://github.com/hfg-gmuend/openmoji/releases">
+    <img src="https://img.shields.io/github/v/release/hfg-gmuend/openmoji?color=red&label=OpenMoji&logo=github&sort=semver&style=flat-square" alt="OpenMoji Version">
   </a>
-  <a title="Gem Version" href="https://rubygems.org/gems/negarmoji">
-    <img src="https://img.shields.io/badge/Jekyll%20OpenMoji-v0.0.1-yellow?style=flat-square" alt="Gem Version">
+  <a title="Gem Version" href="https://rubygems.org/gems/jekyll-openmoji">
+    <img src="https://img.shields.io/gem/v/jekyll-openmoji?color=red&label=Jekyll%20OpenMoji&logo=rubygems&style=flat-square" alt="Gem Version">
   </a>
   <a title="jsDelivr CDN" href="https://www.jsdelivr.com/package/gh/azadeh=afzar/OpenMoji-Jekyll-Plugin">
     <img src="https://data.jsdelivr.com/v1/package/gh/azadeh=afzar/OpenMoji-Jekyll-Plugin/badge" alt="jsDelivr CDN">

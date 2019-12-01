@@ -21,7 +21,6 @@ test_master:
     # setup ci environment.
     - chmod +x script/ci_setup.sh
     - script/ci_setup.sh
-    - ls -lsa
     # run code climate test reporter agent.
     - cc-test-reporter before-build
   # run tests.

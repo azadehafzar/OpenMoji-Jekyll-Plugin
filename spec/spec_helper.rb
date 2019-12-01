@@ -2,7 +2,10 @@
 
 # start code coverage tracker
 require "simplecov"
-SimpleCov.start
+SimpleCov.minimum_coverage 90
+SimpleCov.start do
+  add_filter "/vendor/"
+end
 
 require File.expand_path("../lib/jekyll-openmoji.rb", __dir__)
 

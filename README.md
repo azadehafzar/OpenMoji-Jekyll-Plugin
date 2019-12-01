@@ -75,7 +75,9 @@
 > This project is currently independent from main OpenMoji project.
 
 ### Enjoy a free open source emoji package
-Use more than 3,000 emoji from OpenMoji package for free in your jekyll website.
+Use more than 3,000 emojis from OpenMoji package for free in your jekyll website.
+but remember to credit the OpenMoji project somewhere in your site to comply with
+their license.
 
 ### Connect to any other emoji source
 Use any available emoji package from a CDN or locally served emoji images by adding

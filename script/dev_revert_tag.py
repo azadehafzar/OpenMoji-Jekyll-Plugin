@@ -22,9 +22,9 @@ for line in version_file:
     if "VERSION = " in line:
         # find version string and covert it to
         # standard x.y.z version format.
-        double_quote_left = line.index("\"")
-        double_quote_right = line.index("\"")
-        version = line[double_quote_left + 1:double_quote_right]
+        double_quote_left = line.index("\"") + 1
+        double_quote_right = line[double_quote_left:].index("\"") + double_quote_left
+        version = line[double_quote_left:double_quote_right]
 
 # throe error if version not found
 if not version:

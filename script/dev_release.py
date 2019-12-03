@@ -13,6 +13,8 @@ version_file_path = os.path.join(base_path, "lib", "jekyll-openmoji", "version.r
 with open(version_file_path) as file:
     version_file = file.readlines()
 
+print(version_file)
+
 # set version and version_info to None, so if we didn't find
 # a version in version.rb, we can throw an error.
 version = None
@@ -23,9 +25,9 @@ for line in version_file:
     if "VERSION = " in line:
         # find version string and covert it to
         # standard x.y.z version format.
-        double_quote_left = line.index("\"")
-        double_quote_right = line.index("\"")
-        version = line[double_quote_left + 1:double_quote_right]
+        double_quote_left = line.index("\"") + 1
+        double_quote_right = line[double_quote_left:].index("\"") + double_quote_left
+        version = line[double_quote_left:double_quote_right]
         # creat a list from x.y.z string which has [x, y, z]
         # notice that x, y , z must be converted to integer
         version_info = [int(number) for number in version.split(".")]

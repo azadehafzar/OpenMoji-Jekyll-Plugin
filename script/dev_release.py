@@ -13,8 +13,6 @@ version_file_path = os.path.join(base_path, "lib", "jekyll-openmoji", "version.r
 with open(version_file_path) as file:
     version_file = file.readlines()
 
-print(version_file)
-
 # set version and version_info to None, so if we didn't find
 # a version in version.rb, we can throw an error.
 version = None
@@ -68,7 +66,7 @@ print("Writing new version. \n\n")
 new_version_rb = list()
 
 # write new VERSION in version.rb.
-new_version_info = f"VERSION = \"{new_major}.{new_minor}.{new_patch}\"\n"
+new_version_info = f"    VERSION = \"{new_major}.{new_minor}.{new_patch}\"\n"
 
 # replace old version with new one.
 with open(version_file_path, "r") as file:
@@ -87,7 +85,7 @@ with open(version_file_path, "w+") as file:
 # do git commit and tag and push to upstreams
 print("Commit and Tag and Push to upstream. \n\n")
 
-subprocess.call(f"git commit {version_file_path} -m \"version: OpenMoji Jekyll Plugin v{new_version}\"", shell=True)
+subprocess.call(f"git commit \"{version_file_path}\" -m \"version: OpenMoji Jekyll Plugin v{new_version}\"", shell=True)
 subprocess.call(f"git tag \"v{new_version}\"", shell=True)
 subprocess.call(f"git push origin HEAD \"v{new_version}\"", shell=True)
 subprocess.call(f"git push github HEAD \"v{new_version}\"", shell=True)

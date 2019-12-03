@@ -169,7 +169,7 @@ working on.
 
 ## License
 
-Licensed under the [GPL v3](LICENSE).
+Licensed under the [GPLv3](LICENSE).
 
 ## Attribution
 1. All default emojis designed by [OpenMoji](https://openmoji.org) - the open source

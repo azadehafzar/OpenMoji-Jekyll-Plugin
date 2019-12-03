@@ -45,3 +45,14 @@ test_branches:
   # don't run on master branch.
   except:
     - master
+
+# deploy gems to rubygems.org whenever a tag is released.
+release_pypi:
+  stage: release
+  script:
+    - gem build jekyll-openmoji.gemspec
+    - gem push "jekyll-openmoji-$(git describe --tags).gem"
+  # only run for new tags.
+  only:
+    - tags
+  when: manual

@@ -1,6 +1,6 @@
 stages:
   - test
-  - deploy
+  - release
 
 # default settings for all ci jobs.
 default:
@@ -47,7 +47,7 @@ test_branches:
     - master
 
 # deploy gems to rubygems.org whenever a tag is released.
-release_pypi:
+release_rubygems:
   stage: release
   script:
     - gem build jekyll-openmoji.gemspec

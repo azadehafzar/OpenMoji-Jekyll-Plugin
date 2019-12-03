@@ -50,8 +50,12 @@ test_branches:
 release_rubygems:
   stage: release
   script:
+    # create rubygems credential file for auto login.
+    - script/ci_rubygems.sh
+    # extract tag from git log and strip "v".
     - version=$(git describe --tags)
     - version=${version:1}
+    # build and push gem.
     - gem build jekyll-openmoji.gemspec
     - gem push "jekyll-openmoji-$version.gem"
   # only run for new tags.

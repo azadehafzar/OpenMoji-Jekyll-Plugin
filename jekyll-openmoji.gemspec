@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.description = "OpenMoji emoji pack plugin for Jekyll with powerful
                       configuration options and support for various emoji image file
                       sources and extensions. in addition to OpenMoji emojis, you can
-                      also configure it to use any emoji source available."
+                      also configure it to use any available emoji sources."
   spec.summary = "OpenMoji emoji plugin for Jekyll"
   spec.licenses = "GPL-3.0"
 

@@ -50,8 +50,10 @@ test_branches:
 release_rubygems:
   stage: release
   script:
+    - version=$(git describe --tags)
+    - version=${version:1}
     - gem build jekyll-openmoji.gemspec
-    - gem push "jekyll-openmoji-$(git describe --tags).gem"
+    - gem push "jekyll-openmoji-$version.gem"
   # only run for new tags.
   only:
     - tags

@@ -57,7 +57,7 @@ release_rubygems:
     - version=${version:1}
     # build and push gem.
     - gem build jekyll-openmoji.gemspec
-    - gem push "jekyll-openmoji-$version.gem"
+    - gem push --key mahdi_baghbani "jekyll-openmoji-$version.gem"
   # only run for new tags.
   only:
     - tags

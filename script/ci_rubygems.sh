@@ -9,7 +9,7 @@
 set -ex
 
 mkdir -p ~/.gem
-echo -e "---/r/n:rubygems_api_key: ${RUBYGEMS_API_KEY}" > ~/.gem/credentials
+echo -e "---/r/n:mahdi_baghbani: ${RUBYGEMS_API_KEY}" > ~/.gem/credentials
 chmod 0600 ~/.gem/credentials
 ls ~/.gem
 cat ~/.gem/credentials

@@ -71,7 +71,7 @@
 ><a href="https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin">GitLab</a>, all developments and
 >discussions, issue tracking and merge requests take place in GitLab.  
 
-> This project is a fork of <a href="https://github.com/jekyll/jeomi">Jemoji</a>. 
+> This project is a fork of <a href="https://github.com/jekyll/jemoji">Jemoji</a>. 
 > This project is currently independent from main OpenMoji project.
 
 ### Enjoy a free open source emoji package

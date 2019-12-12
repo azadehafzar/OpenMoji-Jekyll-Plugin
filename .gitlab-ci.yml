@@ -1,26 +1,30 @@
+# stages of gitlab ci.
 stages:
   - test
   - release
 
 # default settings for all ci jobs.
 default:
-  image: ruby:latest
+  image: azadehafzarhub/gitlab-ci-ruby-build:latest
   cache:
     paths:
       - vendor/
 
-# job for testing package on master branch
-# and send test coverage result to codeclimate.
-test_master:
+# job for testing package against ruby version 2.6
+# on master branch and send test coverage result to
+# codeclimate.
+test main branch:
   stage: test
   before_script:
+    # setup rvm.
+    - source ~/.bash_profile
+    # use ruby version 2.6.
+    - rvm use 2.6
     # upgrade bundler to latest version.
     - gem install bundler
     # install dependency gems.
     - bundle install --path vendor
-    # setup ci environment.
-    - script/ci_setup.sh
-    # run code climate test reporter agent.
+    # run codeclimate test reporter agent.
     - cc-test-reporter before-build
   # run tests.
   script:
@@ -31,25 +35,81 @@ test_master:
   only:
     - master
 
-# job for testing package on other branches
-# and merge requests.
-test_branches:
+# job for testing package on other branches than master
+# and merge requests against 2.6 version.
+test ruby 2.6:
   stage: test
+  before_script:
+    # setup rvm.
+    - source ~/.bash_profile
+    # use ruby version 2.6.
+    - rvm use 2.6
+    # upgrade bundler to latest version.
+    - gem install bundler
+    # install dependency gems.
+    - bundle install --path vendor
   # run tests.
   script:
     - script/test.sh
-  # run on branches and merge requests.
   only:
     - branches
     - merge_requests
-  # don't run on master branch.
   except:
     - master
 
+test ruby 2.5:
+  stage: test
+  before_script:
+    # setup rvm.
+    - source ~/.bash_profile
+    # use ruby version 2.5.
+    - rvm use 2.5
+    # upgrade bundler to latest version.
+    - gem install bundler
+    # install dependency gems.
+    - bundle install --path vendor
+  # run tests.
+  script:
+    - script/test.sh
+
+test ruby 2.4:
+  stage: test
+  before_script:
+    # setup rvm.
+    - source ~/.bash_profile
+    # use ruby version 2.4.
+    - rvm use 2.4
+    # upgrade bundler to latest version.
+    - gem install bundler
+    # install dependency gems.
+    - bundle install --path vendor
+  # run tests.
+  script:
+    - script/test.sh
+
+test ruby 2.3:
+  stage: test
+  before_script:
+    # setup rvm.
+    - source ~/.bash_profile
+    # use ruby version 2.3.
+    - rvm use 2.3
+    # upgrade bundler to latest version.
+    - gem install bundler
+    # install dependency gems.
+    - bundle install --path vendor
+  # run tests.
+  script:
+    - script/test.sh
+
 # deploy gems to rubygems.org whenever a tag is released.
-release_rubygems:
+release to rubygems:
   stage: release
   script:
+    # setup rvm.
+    - source ~/.bash_profile
+    # use ruby version 2.6.
+    - rvm use 2.6
     # create rubygems credential file for auto login.
     - script/ci_rubygems.sh
     # extract tag from git log and strip "v".

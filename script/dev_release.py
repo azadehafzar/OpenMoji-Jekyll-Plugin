@@ -54,8 +54,12 @@ if new_version == version:
 
 if new_major < version_info[0]:
     raise ValueError("Major version can't be less than current version!")
+elif new_major > version_info[0]:
+    pass
 elif new_minor < version_info[1]:
     raise ValueError("Minor version can't be less than current version!")
+elif new_minor > version_info[1]:
+    pass
 elif new_patch < version_info[2]:
     raise ValueError("Patch version can't be less than current version!")
 

@@ -71,6 +71,8 @@ test ruby 2.5:
   # run tests.
   script:
     - script/test.sh
+  except:
+    - tags
 
 test ruby 2.4:
   stage: test
@@ -101,6 +103,8 @@ test ruby 2.3:
   # run tests.
   script:
     - script/test.sh
+  except:
+    - tags
 
 # deploy gems to rubygems.org whenever a tag is released.
 release to rubygems:

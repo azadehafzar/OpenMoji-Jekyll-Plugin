@@ -149,6 +149,12 @@ asset path of `/images/color/svg`, which results in emoji image URLs like
 
 However you can alter the default path in `_config.yml` to serve from external sources.
 
+## Preview
+
+see a preview of how OpenMoji emojis looks like with this plugin at this [page][preview]
+
+[preview]: https://azadeh-afzar.gitlab.io/Web-Development/OpenMoji-Jekll-Plugin
+
 ### Notes
 
 Emoji files names should be lowercase unicode strings, for example name of this

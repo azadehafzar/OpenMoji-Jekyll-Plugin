@@ -140,10 +140,12 @@ pages:
     - rvm use 2.6
     # go to blog folder.
     - cd doc/blog
+    # upgrade bundler to latest version.
+    - gem install bundler
     # install dependencies.
     - bundle install --path vendor
     # generate site with jekyll.
-    - bundle exec jekyll build --destination public --verbose --trace
+    - bundle exec jekyll build --verbose --trace --destination public
   artifacts:
     paths:
       - public

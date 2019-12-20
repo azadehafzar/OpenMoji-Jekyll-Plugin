@@ -61,8 +61,8 @@
   <a title="Gem Version" href="https://rubygems.org/gems/jekyll-openmoji">
     <img src="https://img.shields.io/gem/v/jekyll-openmoji?color=red&label=Jekyll%20OpenMoji&logo=rubygems&style=flat-square" alt="Gem Version">
   </a>
-  <a title="jsDelivr CDN" href="https://www.jsdelivr.com/package/gh/azadeh=afzar/OpenMoji-Jekyll-Plugin">
-    <img src="https://data.jsdelivr.com/v1/package/gh/azadeh=afzar/OpenMoji-Jekyll-Plugin/badge" alt="jsDelivr CDN">
+  <a title="jsDelivr CDN" href="https://www.jsdelivr.com/package/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin">
+    <img src="https://data.jsdelivr.com/v1/package/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin/badge" alt="jsDelivr CDN">
   </a>
 </p>
 

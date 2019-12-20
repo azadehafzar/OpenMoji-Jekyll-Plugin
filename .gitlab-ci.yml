@@ -140,7 +140,6 @@ pages:
     # go to blog source.
     - cd doc/blog
     # install dependencies.
-    - bundle update --bundler
     - bundle install --path vendor
     # generate site with jekyll.
     - bundle exec jekyll build -d ../../public

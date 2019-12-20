@@ -124,10 +124,10 @@ pages:
     # install dependencies.
     - bundle install --path vendor
     # generate site with jekyll.
-    - bundle exec jekyll build --trace --destination /public
+    - bundle exec jekyll build --trace --destination public
   artifacts:
     paths:
-      - public
+      - doc/blog/public
   only:
     - master
 

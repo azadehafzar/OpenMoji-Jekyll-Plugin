@@ -9,6 +9,7 @@ AllCops:
   TargetRubyVersion: 2.3
   Exclude:
     - vendor/**/*
+    - doc/**/*
 
 Layout/AlignHash:
   EnforcedHashRocketStyle: table

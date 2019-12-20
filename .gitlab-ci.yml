@@ -128,3 +128,24 @@ release to rubygems:
   only:
     - tags
   when: manual
+
+# release a preview blog for master branch with gitlab pages.
+pages:
+  stage: release
+  script:
+    # setup rvm.
+    - source ~/.bash_profile
+    # use ruby version 2.6.
+    - rvm use 2.6
+    # go to blog source.
+    - cd doc/blog
+    # install dependencies.
+    - bundle install --path vendor
+    # generate site with jekyll.
+    - bundle exec jekyll build -d ../../public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+

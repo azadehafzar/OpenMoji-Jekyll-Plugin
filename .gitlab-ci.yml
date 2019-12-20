@@ -1,6 +1,7 @@
 # stages of gitlab ci.
 stages:
   - test
+  - deploy
   - release
 
 # default settings for all ci jobs.
@@ -131,7 +132,7 @@ release to rubygems:
 
 # release a preview blog for master branch with gitlab pages.
 pages:
-  stage: release
+  stage: deploy
   script:
     # setup rvm.
     - source ~/.bash_profile

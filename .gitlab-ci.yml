@@ -139,6 +139,7 @@ pages:
     # use ruby version 2.6.
     - rvm use 2.6
     # install dependencies.
+    - bundler update --bundler
     - bundle install --path vendor
     # generate site with jekyll.
     - bundle exec jekyll build --source doc/blog --destination public --verbose --trace

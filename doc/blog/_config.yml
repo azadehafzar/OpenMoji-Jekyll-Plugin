@@ -1,0 +1,15 @@
+title: OpenMoji Jekyll Plugin
+email: MahdiBaghbani@protonmail.com
+description: Bring beautiful OpenMoji emojis to your Jekyll websites.
+url: https://azadeh-afzar.gitlab.io/Web-Development/OpenMoji-Jekll-Plugin
+
+minima:
+  social_links:
+    twitter: baghbani1
+    github:  MahdiBaghbani
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-openmoji
+

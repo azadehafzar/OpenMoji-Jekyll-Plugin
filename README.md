@@ -153,7 +153,7 @@ However you can alter the default path in `_config.yml` to serve from external s
 
 see a preview of how OpenMoji emojis looks like with this plugin at this [page][preview]
 
-[preview]: https://azadeh-afzar.gitlab.io/Web-Development/OpenMoji-Jekll-Plugin
+[preview]: https://azadeh-afzar.gitlab.io/Web-Development/OpenMoji-Jekyll-Plugin
 
 ### Notes
 

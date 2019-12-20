@@ -138,11 +138,12 @@ pages:
     - source ~/.bash_profile
     # use ruby version 2.6.
     - rvm use 2.6
+    # go to blog folder.
+    - cd doc/blog
     # install dependencies.
-    - gem install bundler
     - bundle install --path vendor
     # generate site with jekyll.
-    - bundle exec jekyll build --source doc/blog --destination public --verbose --trace
+    - bundle exec jekyll build --destination public --verbose --trace
   artifacts:
     paths:
       - public

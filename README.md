@@ -85,7 +85,7 @@ roughly 5 lines to your website's config file.
 
 ## Preview
 
-see a preview of how OpenMoji emojis looks like with this plugin at this [**page**][preview]
+see a preview of how OpenMoji emojis looks like with this plugin at this [**page**][preview].
 
 [preview]: https://azadeh-afzar.gitlab.io/Web-Development/OpenMoji-Jekyll-Plugin
 
@@ -113,7 +113,7 @@ I give this plugin two :+1:!
 ```
 
 the above markdown text will be used by Jekyll to create a HTML page and with 
-this plugin, Jekyll will turn :+1: into this image
+this plugin, Jekyll will turn `:+1:` into this image
 <img class="emoji" title=":+1:" alt=":+1:" src="https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f44d.svg" width="30em" height="30em" margin="0.5em">
 
 ### Customizing

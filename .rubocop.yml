@@ -19,7 +19,7 @@ Layout/MultilineMethodCallIndentation:
   IndentationWidth: 2
 
 Metrics/AbcSize:
-  Max: 25
+  Max: 30
 
 Metrics/BlockLength:
   Max: 50
@@ -32,6 +32,9 @@ Metrics/MethodLength:
 
 Style/HashSyntax:
   EnforcedStyle: hash_rockets
+
+Style/MutableConstant:
+  Enabled: false
 
 Style/RegexpLiteral:
   EnforcedStyle: percent_r

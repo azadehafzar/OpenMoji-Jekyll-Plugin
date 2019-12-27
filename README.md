@@ -87,8 +87,6 @@ roughly 5 lines to your website's config file.
 
 see a preview of how OpenMoji emojis looks like with this plugin at this [**page**][preview].
 
-[preview]: https://azadeh-afzar.gitlab.io/Web-Development/OpenMoji-Jekyll-Plugin
-
 ## Quick start
 
 ### 1. Add the following to your site's `Gemfile`
@@ -112,9 +110,10 @@ In any page or post, use emoji as you would normally, e.g.
 I give this plugin two :+1:!
 ```
 
-the above markdown text will be used by Jekyll to create a HTML page and with 
-this plugin, Jekyll will turn `:+1:` into this image
-<img class="emoji" title=":+1:" alt=":+1:" src="https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f44d.svg" width="30em" height="30em" margin="0.5em">
+with this plugin, Jekyll will turn this markdown code `:+1:` into this image:
+<img class="emoji" title="+1" alt="👍" src="https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f44d.svg" width="30em" height="30em" margin="0.5em"> .
+
+to see all codes and their emoji images, see preview [**page**][preview].
 
 ### Customizing
 
@@ -136,9 +135,9 @@ emoji:
   # you can also provide an empty string "" if your source doesn't have any asset path.
   asset: "/color/png"
 
-  # final path will be  "https://www.emojisource.com/color/svg" and
+  # final path will be  "https://www.emojisource.com/color/png" and
   # emoji images will serve from this address.
-  # in case of no asset value, final path would be  "https://www.emojisource.com/color/svg"emoji
+  # in case of no asset value, final path would be  "https://www.emojisource.com/color/svg/emoji"
 
   # MORE CONFIGURATION OPTIONS
   # all configs below are optional.
@@ -146,8 +145,16 @@ emoji:
   # default emoji image extension is svg (vector file), but if your emoji source
   # images are in other formats, you can manually override default extension by using below key
   # and specify your desired extension (png, jpg, jpeg, bmp, etc).
-  extension: png
+  extension: "png"
 
+  # you can also provide default inline css properties for emoji images with img_attrs
+  # key, keep in mind that the keys must be valid css properties like padding, margin
+  # height, width, etc.
+  # below is a the default settings.
+  img_attrs:
+    class: "emoji"
+    height: "20"
+    width: "20"
 ```
 
 ## How it works
@@ -185,3 +192,5 @@ Licensed under the [GPLv3](LICENSE).
 1. All default emojis designed by [OpenMoji](https://openmoji.org) - the open source
 emoji and icon project. License: CC BY-SA 4.0
 2. This project is a fork of [Jemoji](https://github.com/jekyll/jemoji). License: MIT
+
+[preview]: https://azadeh-afzar.gitlab.io/Web-Development/OpenMoji-Jekyll-Plugin

@@ -24,7 +24,7 @@ RSpec.describe(Jekyll::Emoji) do
   let(:default_file_name) { "/:file_name" }
   let(:result) do
     <<-STR.strip
-    <img class="emoji" title=":+1:" alt=":+1:" src="#{default_src}#{default_asset_path}/1f44d.svg" height="20" width="20">
+    <img class="emoji" title="+1" alt="👍" src="#{default_src}#{default_asset_path}/1f44d.svg" height="20" width="20">
     STR
   end
 
@@ -33,13 +33,13 @@ RSpec.describe(Jekyll::Emoji) do
   let(:complex_post) { find_by_title(posts, "Code Block") }
 
   let(:pages) { site.pages }
-  let(:index) { site.pages.find { |page| page["title"] == "Jemoji" } }
-  let(:minified) { site.pages.find { |page| page["title"] == "Jemoji Minified" } }
+  let(:index) { site.pages.find { |page| page["title"] == "OpenMoji" } }
+  let(:minified) { site.pages.find { |page| page["title"] == "OpenMoji Minified" } }
 
   # plain_* denote pages that generate markup containing body tags without any attribute.
   # For example, <body>Hello World!</body>
-  let(:plain_index) { site.pages.find { |page| page["title"] == "Plain Jemoji" } }
-  let(:plain_minified) { site.pages.find { |page| page["title"] == "Plain Jemoji Minified" } }
+  let(:plain_index) { site.pages.find { |page| page["title"] == "Plain OpenMoji" } }
+  let(:plain_minified) { site.pages.find { |page| page["title"] == "Plain OpenMoji Minified" } }
 
   let(:multiline_body_tag) { site.pages.find { |page| page["title"] == "Multi-line Body Tag" } }
 
@@ -113,11 +113,29 @@ RSpec.describe(Jekyll::Emoji) do
     expect(multiline_body_tag.output).to eql(fixture("multiline_body_tag.html"))
   end
 
+  context "with a different emoji img_attrs" do
+    let(:emoji_class) { "openmoji" }
+    let(:config_overrides) do
+      {
+        "emoji" => { "img_attrs" => { "class" => emoji_class } },
+      }
+    end
+
+    it "fetches the custom img_attrs from the config" do
+      expect(emoji.emoji_attributes(site.config)[:class]).to eql(emoji_class)
+    end
+
+    it "respects the new class when emojifying" do
+      expect(basic_post.output).to eql(para(result.sub("class: \"emoji\"",
+                                                       "class: #{emoji_class}")))
+    end
+  end
+
   context "with a different base for jekyll-openmoji" do
     let(:emoji_src_root) { "http://mine.club" }
     let(:config_overrides) do
       {
-        "emoji" => { "src" => emoji_src_root },
+        "emoji" => { "src" => emoji_src_root, "img_attrs" => { "class" => "emoji" } },
       }
     end
 

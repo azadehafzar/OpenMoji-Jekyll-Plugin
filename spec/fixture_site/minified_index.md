@@ -1,5 +1,5 @@
 ---
 layout: default_minified
-title: Jemoji Minified
+title: OpenMoji Minified
 ---
 :+1:

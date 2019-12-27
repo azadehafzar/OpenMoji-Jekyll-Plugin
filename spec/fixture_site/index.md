@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Jemoji
+title: OpenMoji
 ---
 :+1:

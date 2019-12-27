@@ -1,5 +1,5 @@
 ---
 layout: without_body_attributes
-title: Plain Jemoji
+title: Plain OpenMoji
 ---
 :+1:

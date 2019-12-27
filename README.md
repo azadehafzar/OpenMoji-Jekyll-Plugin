@@ -102,7 +102,13 @@ plugins:
   - jekyll-openmoji
 ```
 
-### 3. Next steps
+### 3. Open terminal and use bundler to install this new gem.
+
+```bash
+bundle install
+```
+
+### 4. Next steps
 
 In any page or post, use emoji as you would normally, e.g.
 

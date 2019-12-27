@@ -27,10 +27,10 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.3.0"
 
-  spec.add_dependency "html-pipeline", "~> 2.2"
-  spec.add_dependency "html-pipeline-negarmoji", "~> 0.1.0"
+  spec.add_dependency "html-pipeline", "~> 2.12"
+  spec.add_dependency "html-pipeline-negarmoji", "~> 0.1.1"
   spec.add_dependency "jekyll", ">= 3.0", "< 5.0"
-  spec.add_dependency "negarmoji", "~> 0.1.3"
+  spec.add_dependency "negarmoji", "~> 0.1.4"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 13.0"

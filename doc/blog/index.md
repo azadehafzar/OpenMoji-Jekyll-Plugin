@@ -3,7 +3,7 @@ layout: home
 ---
 
 # Preview this plugin
-You can see below how OpenMoji emoijis will look on your website.
+You can see below how OpenMoji emojis will look on your website.
 
 keep in mind that all emoji images has class label `class="emoji"` so you can
 modify their style properties by simply adding or modifying 

@@ -2,6 +2,6 @@
 
 module Jekyll
   class Emoji
-    VERSION = "0.1.2"
+    VERSION = "0.1.3"
   end
 end

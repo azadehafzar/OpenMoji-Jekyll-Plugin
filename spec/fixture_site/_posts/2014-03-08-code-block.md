@@ -7,4 +7,4 @@ def i_am_ruby
 end
 ```
 
-:+1:
+:thumbs_up:

@@ -2,4 +2,4 @@
 layout: default_minified
 title: OpenMoji Minified
 ---
-:+1:
+:thumbs_up:

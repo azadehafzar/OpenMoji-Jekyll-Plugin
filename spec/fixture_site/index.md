@@ -2,4 +2,4 @@
 layout: default
 title: OpenMoji
 ---
-:+1:
+:thumbs_up:

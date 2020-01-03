@@ -113,11 +113,11 @@ bundle install
 In any page or post, use emoji as you would normally, e.g.
 
 ```markdown
-I give this plugin two :+1:!
+I give this plugin two :thumbs_up:!
 ```
 
-with this plugin, Jekyll will turn this markdown code `:+1:` into this image:
-<img class="emoji" title="+1" alt="👍" src="https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f44d.svg" width="30em" height="30em" margin="0.5em"> .
+with this plugin, Jekyll will turn this markdown code `:thumbs_up:` into this image:
+<img class="emoji" title="thumbs_up" alt="👍️" src="https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f44d-fe0f.svg" width="30em" height="30em" margin="0.5em"> .
 
 to see all codes and their emoji images, see preview [**page**][preview].
 
@@ -168,7 +168,7 @@ emoji:
 For all sites emoji images are served from a GitHub.com CDN, with a
 base URL of `https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest` and
 asset path of `/images/color/svg`, which results in emoji image URLs like
-`https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f604.svg`.
+`https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f604-fe0f.svg`.
 
 However you can alter the default path in `_config.yml` to serve from external sources.
 

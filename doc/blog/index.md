@@ -12,15 +12,16 @@ From above menu you can choose emoji categories and preview all emojis on that c
 
 If you have any questions or suggestions, please open an issue at [GitLab][gitlab] repository.
 
-# Emoji Samples and Cheat Codes
 
 ## License
 
 Licensed under the [GPLv3](https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin/LICENSE).
 
 ## Attribution
+
 1. All default emojis designed by [OpenMoji](https://openmoji.org) - the open source
 emoji and icon project. License: CC BY-SA 4.0
+
 2. This project is a fork of [Jemoji](https://github.com/jekyll/jemoji). License: MIT
 
 [gitlab]: https://gitlab.com/Azadeh-Afzar/Web-Development/OpenMoji-Jekyll-Plugin

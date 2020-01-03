@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Extras
+title: OpenMoji Extras
 permalink: /Extras-Openmoji/
 ---
 

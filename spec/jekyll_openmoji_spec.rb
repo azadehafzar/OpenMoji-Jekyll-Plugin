@@ -24,7 +24,7 @@ RSpec.describe(Jekyll::Emoji) do
   let(:default_file_name) { "/:file_name" }
   let(:result) do
     <<-STR.strip
-    <img class="emoji" title="+1" alt="👍" src="#{default_src}#{default_asset_path}/1f44d.svg" height="20" width="20">
+    <img class="emoji" title="thumbs_up" alt="👍️" src="#{default_src}#{default_asset_path}/1f44d-fe0f.svg" height="20" width="20">
     STR
   end
 
@@ -86,11 +86,11 @@ RSpec.describe(Jekyll::Emoji) do
   end
 
   it "leaves non-HTML files alone" do
-    expect(txt_doc.output).to eql(":+1:")
+    expect(txt_doc.output).to eql(":thumbs_up:")
   end
 
   it "does not replace the emoji if the collection document is not to be output" do
-    expect(site.collections["secret"].docs.first.output).to eql(para(":+1:"))
+    expect(site.collections["secret"].docs.first.output).to eql(para(":thumbs_up:"))
   end
 
   it "does not mangle liquid templates" do

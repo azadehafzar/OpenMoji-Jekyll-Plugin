@@ -46,8 +46,6 @@ plugins:
   config:
     allow_affero_copyleft: true
     allow_strong_copyleft: true
- rubocop:
-   enabled: true
 
 exclude_patterns:
 - "config/"

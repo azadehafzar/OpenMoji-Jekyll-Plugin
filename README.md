@@ -168,7 +168,7 @@ emoji:
 For all sites emoji images are served from a GitHub.com CDN, with a
 base URL of `https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest` and
 asset path of `/images/color/svg`, which results in emoji image URLs like
-`https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f604-fe0f.svg`.
+`https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f604.svg`.
 
 However you can alter the default path in `_config.yml` to serve from external sources.
 

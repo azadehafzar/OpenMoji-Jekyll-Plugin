@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "jekyll"
-require "negarmoji"
 require "html/pipeline"
 require "html/pipeline/negarmoji-pipeline"
 

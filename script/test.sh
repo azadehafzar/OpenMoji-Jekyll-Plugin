@@ -8,5 +8,4 @@
 # -x  Print commands and their arguments as they are executed.
 set -ex
 
-script/test_style.sh || ./test_style.sh
 script/test_module.sh || ./test_module.sh

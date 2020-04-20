@@ -24,7 +24,7 @@ RSpec.describe(Jekyll::Emoji) do
   let(:default_file_name) { "/:file_name" }
   let(:result) do
     <<-STR.strip
-    <img class="emoji" title="thumbs_up" alt="👍️" src="#{default_src}#{default_asset_path}/1f44d-fe0f.svg" height="20" width="20">
+    <img class="emoji" title="+1" alt="👍️" src="#{default_src}#{default_asset_path}/1f44d.svg" height="20" width="20">
     STR
   end
 

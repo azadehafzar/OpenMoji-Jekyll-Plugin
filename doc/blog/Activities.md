@@ -3,100 +3,7 @@ layout: page
 title: Activities
 permalink: /Activities/
 ---
-
 ## Activities
-:jack_o_lantern: 
-`:jack_o_lantern:` 
-
-
-:christmas_tree: 
-`:christmas_tree:` 
-
-
-:fireworks: 
-`:fireworks:` 
-
-
-:sparkler: 
-`:sparkler:` 
-
-
-:firecracker: 
-`:firecracker:` 
-
-
-:sparkles: 
-`:sparkles:` 
-
-
-:balloon: 
-`:balloon:` 
-
-
-:tada: 
-`:tada:` 
-
-
-:confetti_ball: 
-`:confetti_ball:` 
-
-
-:tanabata_tree: 
-`:tanabata_tree:` 
-
-
-:bamboo: 
-`:bamboo:` 
-
-
-:dolls: 
-`:dolls:` 
-
-
-:flags: 
-`:flags:` 
-
-
-:wind_chime: 
-`:wind_chime:` 
-
-
-:rice_scene: 
-`:rice_scene:` 
-
-
-:red_envelope: 
-`:red_envelope:` 
-
-
-:ribbon: 
-`:ribbon:` 
-
-
-:gift: 
-`:gift:` 
-
-
-:reminder_ribbon: 
-`:reminder_ribbon:` 
-
-
-:tickets: 
-`:tickets:` 
-
-
-:ticket: 
-`:ticket:` 
-
-
-:medal_military: 
-`:medal_military:` 
-
-
-:medal_sports: 
-`:medal_sports:` 
-
-
 :1st_place_medal: 
 `:1st_place_medal:` 
 
@@ -109,96 +16,88 @@ permalink: /Activities/
 `:3rd_place_medal:` 
 
 
-:softball: 
-`:softball:` 
+:8ball: 
+`:8ball:` 
 
 
-:basketball: 
-`:basketball:` 
+:admission_tickets: 
+`:admission_tickets:` 
 
 
-:volleyball: 
-`:volleyball:` 
+:american_football: 
+`:american_football:` 
 
 
-:football: 
-`:football:` 
+:art: 
+`:art:` 
 
 
-:rugby_football: 
-`:rugby_football:` 
-
-
-:tennis: 
-`:tennis:` 
-
-
-:flying_disc: 
-`:flying_disc:` 
-
-
-:bowling: 
-`:bowling:` 
-
-
-:cricket_game: 
-`:cricket_game:` 
-
-
-:field_hockey: 
-`:field_hockey:` 
-
-
-:ice_hockey: 
-`:ice_hockey:` 
-
-
-:lacrosse: 
-`:lacrosse:` 
-
-
-:ping_pong: 
-`:ping_pong:` 
+:artist_palette: 
+`:artist_palette:` 
 
 
 :badminton: 
 `:badminton:` 
 
 
+:balloon: 
+`:balloon:` 
+
+
+:bamboo: 
+`:bamboo:` 
+
+
+:baseball: 
+`:baseball:` 
+
+
+:basketball: 
+`:basketball:` 
+
+
+:black_joker: 
+`:black_joker:` 
+
+
+:bowling: 
+`:bowling:` 
+
+
 :boxing_glove: 
 `:boxing_glove:` 
 
 
-:martial_arts_uniform: 
-`:martial_arts_uniform:` 
+:carp_streamer: 
+`:carp_streamer:` 
 
 
-:goal_net: 
-`:goal_net:` 
+:chess_pawn: 
+`:chess_pawn:` 
 
 
-:ice_skate: 
-`:ice_skate:` 
+:christmas_tree: 
+`:christmas_tree:` 
 
 
-:fishing_pole_and_fish: 
-`:fishing_pole_and_fish:` 
+:club_suit: 
+`:club_suit:` 
 
 
-:diving_mask: 
-`:diving_mask:` 
+:clubs: 
+`:clubs:` 
 
 
-:running_shirt_with_sash: 
-`:running_shirt_with_sash:` 
+:confetti_ball: 
+`:confetti_ball:` 
 
 
-:ski: 
-`:ski:` 
+:cricket_game: 
+`:cricket_game:` 
 
 
-:sled: 
-`:sled:` 
+:crystal_ball: 
+`:crystal_ball:` 
 
 
 :curling_stone: 
@@ -209,114 +108,338 @@ permalink: /Activities/
 `:dart:` 
 
 
-:yo_yo: 
-`:yo_yo:` 
-
-
-:kite: 
-`:kite:` 
-
-
-:8ball: 
-`:8ball:` 
-
-
-:crystal_ball: 
-`:crystal_ball:` 
-
-
-:nazar_amulet: 
-`:nazar_amulet:` 
-
-
-:joystick: 
-`:joystick:` 
-
-
-:slot_machine: 
-`:slot_machine:` 
-
-
-:game_die: 
-`:game_die:` 
-
-
-:jigsaw: 
-`:jigsaw:` 
-
-
-:teddy_bear: 
-`:teddy_bear:` 
-
-
-:spades: 
-`:spades:` 
-
-
-:hearts: 
-`:hearts:` 
+:diamond_suit: 
+`:diamond_suit:` 
 
 
 :diamonds: 
 `:diamonds:` 
 
 
-:clubs: 
-`:clubs:` 
+:direct_hit: 
+`:direct_hit:` 
 
 
-:chess_pawn: 
-`:chess_pawn:` 
+:diving_mask: 
+`:diving_mask:` 
 
 
-:black_joker: 
-`:black_joker:` 
+:dolls: 
+`:dolls:` 
 
 
-:flower_playing_cards: 
-`:flower_playing_cards:` 
+:field_hockey: 
+`:field_hockey:` 
 
 
-:framed_picture: 
-`:framed_picture:` 
+:firecracker: 
+`:firecracker:` 
 
 
-:art: 
-`:art:` 
+:fireworks: 
+`:fireworks:` 
 
 
-:thread: 
-`:thread:` 
+:fishing_pole: 
+`:fishing_pole:` 
 
 
-:yarn: 
-`:yarn:` 
-
-
-:trophy_alternative: 
-`:trophy_alternative:` 
-
-
-:soccer_ball: 
-`:soccer_ball:` 
-
-
-:baseball_alternative: 
-`:baseball_alternative:` 
+:fishing_pole_and_fish: 
+`:fishing_pole_and_fish:` 
 
 
 :flag_in_hole: 
 `:flag_in_hole:` 
 
 
-:video_game_alternative: 
-`:video_game_alternative:` 
+:flags: 
+`:flags:` 
+
+
+:flower_playing_cards: 
+`:flower_playing_cards:` 
+
+
+:flying_disc: 
+`:flying_disc:` 
+
+
+:football: 
+`:football:` 
+
+
+:framed_picture: 
+`:framed_picture:` 
+
+
+:game_die: 
+`:game_die:` 
+
+
+:gift: 
+`:gift:` 
+
+
+:goal_net: 
+`:goal_net:` 
+
+
+:golf: 
+`:golf:` 
+
+
+:heart_suit: 
+`:heart_suit:` 
+
+
+:hearts: 
+`:hearts:` 
+
+
+:ice_hockey: 
+`:ice_hockey:` 
+
+
+:ice_skate: 
+`:ice_skate:` 
+
+
+:jack_o_lantern: 
+`:jack_o_lantern:` 
+
+
+:japanese_dolls: 
+`:japanese_dolls:` 
+
+
+:jigsaw: 
+`:jigsaw:` 
+
+
+:joker: 
+`:joker:` 
+
+
+:joystick: 
+`:joystick:` 
+
+
+:kite: 
+`:kite:` 
+
+
+:knot: 
+`:knot:` 
+
+
+:lacrosse: 
+`:lacrosse:` 
+
+
+:magic_wand: 
+`:magic_wand:` 
+
+
+:mahjong: 
+`:mahjong:` 
 
 
 :mahjong_red_dragon: 
 `:mahjong_red_dragon:` 
 
 
-:performing_arts_alternative: 
-`:performing_arts_alternative:` 
+:martial_arts_uniform: 
+`:martial_arts_uniform:` 
+
+
+:medal_military: 
+`:medal_military:` 
+
+
+:medal_sports: 
+`:medal_sports:` 
+
+
+:military_medal: 
+`:military_medal:` 
+
+
+:moon_viewing_ceremony: 
+`:moon_viewing_ceremony:` 
+
+
+:nazar_amulet: 
+`:nazar_amulet:` 
+
+
+:nesting_dolls: 
+`:nesting_dolls:` 
+
+
+:party_popper: 
+`:party_popper:` 
+
+
+:performing_arts: 
+`:performing_arts:` 
+
+
+:pi_ata: 
+`:pi_ata:` 
+
+
+:pinata: 
+`:pinata:` 
+
+
+:pine_decoration: 
+`:pine_decoration:` 
+
+
+:ping_pong: 
+`:ping_pong:` 
+
+
+:pool_8_ball: 
+`:pool_8_ball:` 
+
+
+:puzzle_piece: 
+`:puzzle_piece:` 
+
+
+:red_envelope: 
+`:red_envelope:` 
+
+
+:reminder_ribbon: 
+`:reminder_ribbon:` 
+
+
+:ribbon: 
+`:ribbon:` 
+
+
+:rice_scene: 
+`:rice_scene:` 
+
+
+:rugby_football: 
+`:rugby_football:` 
+
+
+:running_shirt: 
+`:running_shirt:` 
+
+
+:running_shirt_with_sash: 
+`:running_shirt_with_sash:` 
+
+
+:sewing_needle: 
+`:sewing_needle:` 
+
+
+:ski: 
+`:ski:` 
+
+
+:skis: 
+`:skis:` 
+
+
+:sled: 
+`:sled:` 
+
+
+:slot_machine: 
+`:slot_machine:` 
+
+
+:soccer: 
+`:soccer:` 
+
+
+:soccer_ball: 
+`:soccer_ball:` 
+
+
+:softball: 
+`:softball:` 
+
+
+:spade_suit: 
+`:spade_suit:` 
+
+
+:spades: 
+`:spades:` 
+
+
+:sparkler: 
+`:sparkler:` 
+
+
+:sparkles: 
+`:sparkles:` 
+
+
+:sports_medal: 
+`:sports_medal:` 
+
+
+:tada: 
+`:tada:` 
+
+
+:tanabata_tree: 
+`:tanabata_tree:` 
+
+
+:teddy_bear: 
+`:teddy_bear:` 
+
+
+:tennis: 
+`:tennis:` 
+
+
+:thread: 
+`:thread:` 
+
+
+:ticket: 
+`:ticket:` 
+
+
+:tickets: 
+`:tickets:` 
+
+
+:trophy: 
+`:trophy:` 
+
+
+:video_game: 
+`:video_game:` 
+
+
+:volleyball: 
+`:volleyball:` 
+
+
+:wind_chime: 
+`:wind_chime:` 
+
+
+:wrapped_gift: 
+`:wrapped_gift:` 
+
+
+:yarn: 
+`:yarn:` 
+
+
+:yo_yo: 
+`:yo_yo:` 
 

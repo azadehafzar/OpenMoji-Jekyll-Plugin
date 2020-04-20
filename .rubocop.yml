@@ -10,6 +10,7 @@ AllCops:
   Exclude:
     - vendor/**/*
     - doc/**/*
+    - "spec/jekyll_openmoji_spec.rb"
 
 Layout/HashAlignment:
   EnforcedHashRocketStyle: table
@@ -23,6 +24,8 @@ Layout/LineLength:
 
 Metrics/AbcSize:
   Max: 30
+  Exclude:
+    - "lib/jekyll_openmoji/plugin.rb"
 
 Metrics/BlockLength:
   Max: 50

@@ -1,16 +1,15 @@
-inherit_from: .rubocop_todo.yml
-
 require: rubocop-jekyll
 
 inherit_gem:
   rubocop-jekyll: .rubocop.yml
 
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.6
   Exclude:
     - vendor/**/*
     - doc/**/*
-    - "spec/jekyll_openmoji_spec.rb"
+    - spec/**/*
+    - "jekyll-openmoji.gemspec"
 
 Layout/HashAlignment:
   EnforcedHashRocketStyle: table

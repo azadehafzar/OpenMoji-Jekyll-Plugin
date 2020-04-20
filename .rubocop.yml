@@ -11,21 +11,21 @@ AllCops:
     - vendor/**/*
     - doc/**/*
 
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedHashRocketStyle: table
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented_relative_to_receiver
   IndentationWidth: 2
 
+Layout/LineLength:
+  Max: 85
+
 Metrics/AbcSize:
   Max: 30
 
 Metrics/BlockLength:
   Max: 50
-
-Metrics/LineLength:
-  Max: 85
 
 Metrics/MethodLength:
   Max: 25

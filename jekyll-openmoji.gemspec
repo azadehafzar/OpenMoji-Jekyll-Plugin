@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.licenses = "GPL-3.0"
 
   spec.files = `git ls-files -z`.split("\x0").reject { |f|
-    f.match(%r!^(images|script|spec)/!)
+    f.match(%r!^(doc|images|script|spec)/!)
   }
   spec.executables = spec.files.grep(%r!^bin/!) { |f| File.basename(f) }
   spec.test_files = spec.files.grep(%r!^test/!)
@@ -28,9 +28,9 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.3.0"
 
   spec.add_dependency "html-pipeline", "~> 2.12"
-  spec.add_dependency "html-pipeline-negarmoji", "~> 0.1.4"
+  spec.add_dependency "html-pipeline-negarmoji", "~> 0.1.5"
   spec.add_dependency "jekyll", ">= 3.0", "< 5.0"
-  spec.add_dependency "negarmoji", "~> 0.1.8"
+  spec.add_dependency "negarmoji", "~> 0.1.9"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 13.0"

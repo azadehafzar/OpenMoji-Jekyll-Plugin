@@ -6,20 +6,10 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 1
-# Configuration parameters: CountComments, Max, ExcludedMethods.
-# ExcludedMethods: refine
-Metrics/BlockLength:
+AllCops:
   Exclude:
     - "spec/jekyll_openmoji_spec.rb"
-
-# Offense count: 1
-# Configuration parameters: Max, AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
-# URISchemes: http, https
-Metrics/LineLength:
-  Exclude:
-    - "spec/jekyll_openmoji_spec.rb"
-
+    -
 Metrics/AbcSize:
   Exclude:
     - "lib/jekyll_openmoji/plugin.rb"

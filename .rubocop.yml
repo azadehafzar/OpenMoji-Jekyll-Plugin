@@ -1,0 +1,45 @@
+require: rubocop-jekyll
+
+inherit_gem:
+  rubocop-jekyll: .rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.7
+  Exclude:
+    - vendor/**/*
+    - doc/**/*
+    - spec/**/*
+    - "jekyll-openmoji.gemspec"
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
+  IndentationWidth: 2
+
+Layout/LineLength:
+  Max: 85
+
+Metrics/AbcSize:
+  Max: 30
+  Exclude:
+    - "lib/jekyll_openmoji/plugin.rb"
+
+Metrics/BlockLength:
+  Max: 50
+
+Metrics/MethodLength:
+  Max: 25
+
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/RegexpLiteral:
+  EnforcedStyle: percent_r
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes

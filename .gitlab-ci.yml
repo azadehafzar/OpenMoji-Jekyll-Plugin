@@ -1,6 +1,7 @@
 # stages of gitlab ci.
 stages:
   - test
+  - deploy
   - release
 
 # default settings for all ci jobs.
@@ -89,7 +90,7 @@ test ruby 2.5.7:
 
 # release a preview blog for master branch with gitlab pages.
 pages:
-  stage: release
+  stage: deploy
   script:
     # setup rbenv.
     - source ~/.bash_profile

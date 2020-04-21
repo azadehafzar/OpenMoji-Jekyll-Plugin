@@ -123,8 +123,8 @@ release to rubygems:
     - version=$(git describe --tags)
     - version=${version:1}
     # build and push gem.
-    - gem build negarmoji.gemspec
-    - gem push "negarmoji-$version.gem"
+    - gem build jekyll-openmoji.gemspec
+    - gem push "jekyll-openmoji-$version.gem"
   # only run for new tags.
   only:
     - tags

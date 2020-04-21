@@ -37,6 +37,10 @@ def create_md_files(negarmoji_json, doc_path):
         # create permalink path for this category.
         category_permalink = category.replace(' ', '').replace('&', '-')
 
+        # filter special case.
+        if category_title == "Extras":
+            category_title = category.split()[2]
+
         # format template with this category.
         head = template.format(category_title, category_permalink)
 

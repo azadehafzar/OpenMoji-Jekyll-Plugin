@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Extras
+title: Unicode
 permalink: /Extras-Unicode/
 ---
 ## Extras & Unicode

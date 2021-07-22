@@ -86,7 +86,7 @@ roughly 5 lines to your website's config file.
 
 ## Preview
 
-[![screenshot of OpenMoji Emoji preview blog](/preview.png)](preview)
+[![screenshot of OpenMoji Emoji preview blog](/pages_preview.webp)](preview)
 
 see a preview of OpenMoji emojis with their aliases.
 

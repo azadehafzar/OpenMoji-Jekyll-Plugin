@@ -224,6 +224,14 @@ permalink: /Smileys-Emotion/
 `:face_blowing_a_kiss:` 
 
 
+:face_exhaling: 
+`:face_exhaling:` 
+
+
+:face_in_clouds: 
+`:face_in_clouds:` 
+
+
 :face_savoring_food: 
 `:face_savoring_food:` 
 
@@ -262,6 +270,10 @@ permalink: /Smileys-Emotion/
 
 :face_with_rolling_eyes: 
 `:face_with_rolling_eyes:` 
+
+
+:face_with_spiral_eyes: 
+`:face_with_spiral_eyes:` 
 
 
 :face_with_steam_from_nose: 
@@ -416,6 +428,10 @@ permalink: /Smileys-Emotion/
 `:heart_eyes_cat:` 
 
 
+:heart_on_fire: 
+`:heart_on_fire:` 
+
+
 :heart_with_arrow: 
 `:heart_with_arrow:` 
 
@@ -528,6 +544,10 @@ permalink: /Smileys-Emotion/
 `:kissing_smiling_eyes:` 
 
 
+:knocked_out_face: 
+`:knocked_out_face:` 
+
+
 :laughing: 
 `:laughing:` 
 
@@ -550,6 +570,10 @@ permalink: /Smileys-Emotion/
 
 :mask: 
 `:mask:` 
+
+
+:mending_heart: 
+`:mending_heart:` 
 
 
 :money_mouth_face: 

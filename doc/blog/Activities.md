@@ -68,6 +68,10 @@ permalink: /Activities/
 `:boxing_glove:` 
 
 
+:bullseye: 
+`:bullseye:` 
+
+
 :carp_streamer: 
 `:carp_streamer:` 
 
@@ -114,10 +118,6 @@ permalink: /Activities/
 
 :diamonds: 
 `:diamonds:` 
-
-
-:direct_hit: 
-`:direct_hit:` 
 
 
 :diving_mask: 
@@ -282,10 +282,6 @@ permalink: /Activities/
 
 :performing_arts: 
 `:performing_arts:` 
-
-
-:pi_ata: 
-`:pi_ata:` 
 
 
 :pinata: 

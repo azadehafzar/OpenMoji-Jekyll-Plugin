@@ -396,10 +396,6 @@ permalink: /Symbols/
 `:exclamation:` 
 
 
-:exclamation_mark: 
-`:exclamation_mark:` 
-
-
 :exclamation_question_mark: 
 `:exclamation_question_mark:` 
 
@@ -980,10 +976,6 @@ permalink: /Symbols/
 `:question:` 
 
 
-:question_mark: 
-`:question_mark:` 
-
-
 :radio_button: 
 `:radio_button:` 
 
@@ -1006,6 +998,14 @@ permalink: /Symbols/
 
 :red_circle: 
 `:red_circle:` 
+
+
+:red_exclamation_mark: 
+`:red_exclamation_mark:` 
+
+
+:red_question_mark: 
+`:red_question_mark:` 
 
 
 :red_square: 

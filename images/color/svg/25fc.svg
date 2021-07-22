@@ -1,8 +1,1 @@
-<svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-  <g id="color">
-    <rect id="mittleres_schwarzes_quadrat_color_1" x="16.0834" y="16.0417" width="39.8332" height="39.8332"/>
-  </g>
-  <g id="line">
-    <rect id="mittleres_schwarzes_quadrat_line_1" x="16.0834" y="16.0417" width="39.8332" height="39.8332" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  </g>
-</svg>
+<svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><path d="M55.917 16.042H16.083v39.833h39.834V16.042z"/><path fill="#3F3F3F" d="M55.917 16.042H16.083v39.833h39.834V16.042z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M55.917 16.042H16.083v39.833h39.834V16.042z"/></svg>

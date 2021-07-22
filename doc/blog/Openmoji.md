@@ -12,6 +12,18 @@ permalink: /Extras-Openmoji/
 `:add_contact_extra:` 
 
 
+:android_extra: 
+`:android_extra:` 
+
+
+:annoyed_face_with_tongue_extra: 
+`:annoyed_face_with_tongue_extra:` 
+
+
+:apple_extra: 
+`:apple_extra:` 
+
+
 :archive_extra: 
 `:archive_extra:` 
 
@@ -64,6 +76,10 @@ permalink: /Extras-Openmoji/
 `:avalanche_extra:` 
 
 
+:axe_extra: 
+`:axe_extra:` 
+
+
 :backache_extra: 
 `:backache_extra:` 
 
@@ -76,6 +92,10 @@ permalink: /Extras-Openmoji/
 `:bandage_scissors_extra:` 
 
 
+:barista_extra: 
+`:barista_extra:` 
+
+
 :bed_linen_extra: 
 `:bed_linen_extra:` 
 
@@ -84,12 +104,40 @@ permalink: /Extras-Openmoji/
 `:beluga_extra:` 
 
 
+:black_hole_extra: 
+`:black_hole_extra:` 
+
+
 :blood_transfusion_extra: 
 `:blood_transfusion_extra:` 
 
 
+:blue_flag_extra: 
+`:blue_flag_extra:` 
+
+
+:blue_hexagon_extra: 
+`:blue_hexagon_extra:` 
+
+
+:boule_bread_extra: 
+`:boule_bread_extra:` 
+
+
 :brain_extra: 
 `:brain_extra:` 
+
+
+:brown_flag_extra: 
+`:brown_flag_extra:` 
+
+
+:brown_hexagon_extra: 
+`:brown_hexagon_extra:` 
+
+
+:browncoat_flag_extra: 
+`:browncoat_flag_extra:` 
 
 
 :cable_extra: 
@@ -100,12 +148,32 @@ permalink: /Extras-Openmoji/
 `:cafeteria_extra:` 
 
 
+:cake_extra: 
+`:cake_extra:` 
+
+
+:champignon_brown_extra: 
+`:champignon_brown_extra:` 
+
+
+:champignon_white_extra: 
+`:champignon_white_extra:` 
+
+
 :charge_plug_extra: 
 `:charge_plug_extra:` 
 
 
 :chats_extra: 
 `:chats_extra:` 
+
+
+:chrome_extra: 
+`:chrome_extra:` 
+
+
+:chromium_extra: 
+`:chromium_extra:` 
 
 
 :circuit_extra: 
@@ -122,6 +190,10 @@ permalink: /Extras-Openmoji/
 
 :code_editor_extra: 
 `:code_editor_extra:` 
+
+
+:coffee_grinder_extra: 
+`:coffee_grinder_extra:` 
 
 
 :collaboration_extra: 
@@ -156,12 +228,48 @@ permalink: /Extras-Openmoji/
 `:cursor_extra:` 
 
 
+:deep_blue_flag_extra: 
+`:deep_blue_flag_extra:` 
+
+
+:deep_brown_flag_extra: 
+`:deep_brown_flag_extra:` 
+
+
+:deep_green_flag_extra: 
+`:deep_green_flag_extra:` 
+
+
+:deep_orange_flag_extra: 
+`:deep_orange_flag_extra:` 
+
+
+:deep_purple_flag_extra: 
+`:deep_purple_flag_extra:` 
+
+
+:deep_red_flag_extra: 
+`:deep_red_flag_extra:` 
+
+
+:deep_yellow_flag_extra: 
+`:deep_yellow_flag_extra:` 
+
+
+:dejected_face_extra: 
+`:dejected_face_extra:` 
+
+
 :delete_extra: 
 `:delete_extra:` 
 
 
 :details_extra: 
 `:details_extra:` 
+
+
+:disinfect_surface_extra: 
+`:disinfect_surface_extra:` 
 
 
 :doe_extra: 
@@ -178,6 +286,10 @@ permalink: /Extras-Openmoji/
 
 :download_extra: 
 `:download_extra:` 
+
+
+:drip_coffee_maker_extra: 
+`:drip_coffee_maker_extra:` 
 
 
 :drone_extra: 
@@ -208,12 +320,20 @@ permalink: /Extras-Openmoji/
 `:ecg_waves_extra:` 
 
 
+:edge_extra: 
+`:edge_extra:` 
+
+
 :edit_extra: 
 `:edit_extra:` 
 
 
 :eiffel_tower_extra: 
 `:eiffel_tower_extra:` 
+
+
+:electric_coffee_percolator_extra: 
+`:electric_coffee_percolator_extra:` 
 
 
 :electric_plug_red_extra: 
@@ -230,6 +350,14 @@ permalink: /Extras-Openmoji/
 
 :emergency_exit_extra: 
 `:emergency_exit_extra:` 
+
+
+:esperanto_flag_extra: 
+`:esperanto_flag_extra:` 
+
+
+:espresso_machine_extra: 
+`:espresso_machine_extra:` 
 
 
 :european_name_badge_extra: 
@@ -296,6 +424,10 @@ permalink: /Extras-Openmoji/
 `:finger_pushing_button_extra:` 
 
 
+:firefox_extra: 
+`:firefox_extra:` 
+
+
 :first_aid_bag_extra: 
 `:first_aid_bag_extra:` 
 
@@ -328,6 +460,10 @@ permalink: /Extras-Openmoji/
 `:flood_extra:` 
 
 
+:foggy_mountain_extra: 
+`:foggy_mountain_extra:` 
+
+
 :forceps_extra: 
 `:forceps_extra:` 
 
@@ -338,6 +474,22 @@ permalink: /Extras-Openmoji/
 
 :fracture_leg_extra: 
 `:fracture_leg_extra:` 
+
+
+:french_press_extra: 
+`:french_press_extra:` 
+
+
+:gardener_man_extra: 
+`:gardener_man_extra:` 
+
+
+:gardener_woman_extra: 
+`:gardener_woman_extra:` 
+
+
+:gardening_gloves_extra: 
+`:gardening_gloves_extra:` 
 
 
 :geiger_counter_extra: 
@@ -354,6 +506,18 @@ permalink: /Extras-Openmoji/
 
 :gps_extra: 
 `:gps_extra:` 
+
+
+:green_flag_extra: 
+`:green_flag_extra:` 
+
+
+:green_hexagon_extra: 
+`:green_hexagon_extra:` 
+
+
+:greta_thunberg_extra: 
+`:greta_thunberg_extra:` 
 
 
 :half_orange_fruit_extra: 
@@ -378,6 +542,10 @@ permalink: /Extras-Openmoji/
 
 :home_button_extra: 
 `:home_button_extra:` 
+
+
+:horse_jumping_hurdle_extra: 
+`:horse_jumping_hurdle_extra:` 
 
 
 :horse_riding_extra: 
@@ -408,6 +576,10 @@ permalink: /Extras-Openmoji/
 `:iceberg_extra:` 
 
 
+:inaturalist_extra: 
+`:inaturalist_extra:` 
+
+
 :inbox_extra: 
 `:inbox_extra:` 
 
@@ -418,6 +590,10 @@ permalink: /Extras-Openmoji/
 
 :instagram_extra: 
 `:instagram_extra:` 
+
+
+:internet_explorer_extra: 
+`:internet_explorer_extra:` 
 
 
 :interview_extra: 
@@ -460,6 +636,14 @@ permalink: /Extras-Openmoji/
 `:large_intestine_extra:` 
 
 
+:latte_macchiato_extra: 
+`:latte_macchiato_extra:` 
+
+
+:lawn_mower_extra: 
+`:lawn_mower_extra:` 
+
+
 :led_extra: 
 `:led_extra:` 
 
@@ -474,6 +658,10 @@ permalink: /Extras-Openmoji/
 
 :link_extra: 
 `:link_extra:` 
+
+
+:linkedin_extra: 
+`:linkedin_extra:` 
 
 
 :liver_extra: 
@@ -492,12 +680,28 @@ permalink: /Extras-Openmoji/
 `:locomotion_extra:` 
 
 
+:macaw_extra: 
+`:macaw_extra:` 
+
+
 :male_doctor_extra: 
 `:male_doctor_extra:` 
 
 
 :male_nurse_extra: 
 `:male_nurse_extra:` 
+
+
+:man_barista_extra: 
+`:man_barista_extra:` 
+
+
+:man_sneezing_into_elbow_extra: 
+`:man_sneezing_into_elbow_extra:` 
+
+
+:man_with_medical_mask_extra: 
+`:man_with_medical_mask_extra:` 
 
 
 :mark_extra: 
@@ -512,8 +716,20 @@ permalink: /Extras-Openmoji/
 `:meat_consumption_extra:` 
 
 
+:medical_gloves_extra: 
+`:medical_gloves_extra:` 
+
+
 :medication_extra: 
 `:medication_extra:` 
+
+
+:microbe_extra: 
+`:microbe_extra:` 
+
+
+:milk_jug_extra: 
+`:milk_jug_extra:` 
 
 
 :mobile_info_extra: 
@@ -524,6 +740,10 @@ permalink: /Extras-Openmoji/
 `:mobile_message_extra:` 
 
 
+:moka_pot_extra: 
+`:moka_pot_extra:` 
+
+
 :more_information_extra: 
 `:more_information_extra:` 
 
@@ -532,16 +752,24 @@ permalink: /Extras-Openmoji/
 `:motor_extra:` 
 
 
-:mouse_extra: 
-`:mouse_extra:` 
-
-
 :move_extra: 
 `:move_extra:` 
 
 
+:musicbrainz_extra: 
+`:musicbrainz_extra:` 
+
+
+:nail_and_gear_flag_extra: 
+`:nail_and_gear_flag_extra:` 
+
+
 :narwhal_extra: 
 `:narwhal_extra:` 
+
+
+:netscape_navigator_extra: 
+`:netscape_navigator_extra:` 
 
 
 :no_handshaking_extra: 
@@ -584,6 +812,26 @@ permalink: /Extras-Openmoji/
 `:ok_stencil_extra:` 
 
 
+:openfoodfact_extra: 
+`:openfoodfact_extra:` 
+
+
+:openstreetmap_extra: 
+`:openstreetmap_extra:` 
+
+
+:opera_extra: 
+`:opera_extra:` 
+
+
+:orange_flag_extra: 
+`:orange_flag_extra:` 
+
+
+:orange_hexagon_extra: 
+`:orange_hexagon_extra:` 
+
+
 :orca_extra: 
 `:orca_extra:` 
 
@@ -616,12 +864,24 @@ permalink: /Extras-Openmoji/
 `:people_dialogue_extra:` 
 
 
+:person_sneezing_into_elbow_extra: 
+`:person_sneezing_into_elbow_extra:` 
+
+
 :person_with_dog_extra: 
 `:person_with_dog_extra:` 
 
 
+:person_with_medical_mask_extra: 
+`:person_with_medical_mask_extra:` 
+
+
 :picture_extra: 
 `:picture_extra:` 
+
+
+:pigeon_extra: 
+`:pigeon_extra:` 
 
 
 :pills_extra: 
@@ -672,12 +932,40 @@ permalink: /Extras-Openmoji/
 `:pretzel_extra:` 
 
 
+:purple_flag_extra: 
+`:purple_flag_extra:` 
+
+
+:purple_hexagon_extra: 
+`:purple_hexagon_extra:` 
+
+
+:quarantine_extra: 
+`:quarantine_extra:` 
+
+
 :radioactive_waste_extra: 
 `:radioactive_waste_extra:` 
 
 
+:rainbow_hexagon_extra: 
+`:rainbow_hexagon_extra:` 
+
+
 :raspberry_pi_extra: 
 `:raspberry_pi_extra:` 
+
+
+:red_and_black_flag_extra: 
+`:red_and_black_flag_extra:` 
+
+
+:red_flag_extra: 
+`:red_flag_extra:` 
+
+
+:red_hexagon_extra: 
+`:red_hexagon_extra:` 
 
 
 :return_back_button_extra: 
@@ -688,6 +976,14 @@ permalink: /Extras-Openmoji/
 `:reusable_bag_extra:` 
 
 
+:roasted_coffee_bean_extra: 
+`:roasted_coffee_bean_extra:` 
+
+
+:safari_extra: 
+`:safari_extra:` 
+
+
 :safety_extra: 
 `:safety_extra:` 
 
@@ -696,8 +992,16 @@ permalink: /Extras-Openmoji/
 `:saline_drip_extra:` 
 
 
+:sanitizer_spray_extra: 
+`:sanitizer_spray_extra:` 
+
+
 :save_extra: 
 `:save_extra:` 
+
+
+:saw_extra: 
+`:saw_extra:` 
 
 
 :scale_extra: 
@@ -740,10 +1044,6 @@ permalink: /Extras-Openmoji/
 `:shelter_extra:` 
 
 
-:shot_extra: 
-`:shot_extra:` 
-
-
 :signpost_extra: 
 `:signpost_extra:` 
 
@@ -754,6 +1054,10 @@ permalink: /Extras-Openmoji/
 
 :smartwatch_extra: 
 `:smartwatch_extra:` 
+
+
+:social_distancing_extra: 
+`:social_distancing_extra:` 
 
 
 :solar_cell_extra: 
@@ -776,6 +1080,10 @@ permalink: /Extras-Openmoji/
 `:space_shuttle_extra:` 
 
 
+:spade_extra: 
+`:spade_extra:` 
+
+
 :spatzlepresse_extra: 
 `:spatzlepresse_extra:` 
 
@@ -786,6 +1094,18 @@ permalink: /Extras-Openmoji/
 
 :stairway_extra: 
 `:stairway_extra:` 
+
+
+:stick_figure_with_dress_and_arms_raised_extra: 
+`:stick_figure_with_dress_and_arms_raised_extra:` 
+
+
+:stick_figure_with_dress_leaning_left_extra: 
+`:stick_figure_with_dress_leaning_left_extra:` 
+
+
+:stick_figure_with_dress_leaning_right_extra: 
+`:stick_figure_with_dress_leaning_right_extra:` 
 
 
 :stomach_extra: 
@@ -844,6 +1164,14 @@ permalink: /Extras-Openmoji/
 `:tap_extra:` 
 
 
+:tardis_extra: 
+`:tardis_extra:` 
+
+
+:temperature_taking_extra: 
+`:temperature_taking_extra:` 
+
+
 :three_finger_operation_extra: 
 `:three_finger_operation_extra:` 
 
@@ -868,6 +1196,10 @@ permalink: /Extras-Openmoji/
 `:transmission_extra:` 
 
 
+:trowel_extra: 
+`:trowel_extra:` 
+
+
 :trump_extra: 
 `:trump_extra:` 
 
@@ -880,8 +1212,20 @@ permalink: /Extras-Openmoji/
 `:twitter_extra:` 
 
 
+:ubuntu_extra: 
+`:ubuntu_extra:` 
+
+
+:united_federation_of_planets_flag_star_trek_extra: 
+`:united_federation_of_planets_flag_star_trek_extra:` 
+
+
 :upload_extra: 
 `:upload_extra:` 
+
+
+:viennese_coffee_house_extra: 
+`:viennese_coffee_house_extra:` 
 
 
 :virtual_reality_extra: 
@@ -916,16 +1260,32 @@ permalink: /Extras-Openmoji/
 `:warning_volcano_extra:` 
 
 
+:wash_hands_extra: 
+`:wash_hands_extra:` 
+
+
 :washing_machine_extra: 
 `:washing_machine_extra:` 
+
+
+:web_syndication_extra: 
+`:web_syndication_extra:` 
 
 
 :wheel_chair_extra: 
 `:wheel_chair_extra:` 
 
 
+:wheelbarrow_extra: 
+`:wheelbarrow_extra:` 
+
+
 :wifi_extra: 
 `:wifi_extra:` 
+
+
+:wikidata_extra: 
+`:wikidata_extra:` 
 
 
 :wild_fire_extra: 
@@ -936,12 +1296,36 @@ permalink: /Extras-Openmoji/
 `:wind_energy_extra:` 
 
 
+:windows_extra: 
+`:windows_extra:` 
+
+
 :wire_extra: 
 `:wire_extra:` 
 
 
 :wireframes_extra: 
 `:wireframes_extra:` 
+
+
+:woman_barista_extra: 
+`:woman_barista_extra:` 
+
+
+:woman_sneezing_into_elbow_extra: 
+`:woman_sneezing_into_elbow_extra:` 
+
+
+:woman_with_medical_mask_extra: 
+`:woman_with_medical_mask_extra:` 
+
+
+:yellow_flag_extra: 
+`:yellow_flag_extra:` 
+
+
+:yellow_hexagon_extra: 
+`:yellow_hexagon_extra:` 
 
 
 :youtube_extra: 

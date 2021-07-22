@@ -912,10 +912,6 @@ permalink: /Objects/
 `:pill:` 
 
 
-:pistol: 
-`:pistol:` 
-
-
 :placard: 
 `:placard:` 
 
@@ -1254,6 +1250,10 @@ permalink: /Objects/
 
 :wastebasket: 
 `:wastebasket:` 
+
+
+:water_pistol: 
+`:water_pistol:` 
 
 
 :white_cane: 

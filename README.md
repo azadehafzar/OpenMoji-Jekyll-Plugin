@@ -72,11 +72,12 @@
 >discussions, issue tracking and merge requests take place in GitLab.  
 
 > This project is a fork of <a href="https://github.com/jekyll/jemoji">Jemoji</a>. 
-> This project is currently independent from main OpenMoji project.
+
+> This project is independent from <a href="https://openmoji.org">OpenMoji</a> project.
 
 ### Enjoy a free open source emoji package
 Use more than 3,000 emojis from OpenMoji package for free in your jekyll website.
-but remember to credit the OpenMoji project somewhere in your site to comply with
+but remember to ***credit the OpenMoji project*** somewhere in your site to comply with
 their license.
 
 ### Connect to any other emoji source
@@ -85,7 +86,9 @@ roughly 5 lines to your website's config file.
 
 ## Preview
 
-see a preview of how OpenMoji emojis looks like with this plugin at this [**page**][preview].
+[![screenshot of OpenMoji Emoji preview blog](/preview.png)](preview)
+
+see a preview of OpenMoji emojis with their aliases.
 
 ## Quick start
 
@@ -116,7 +119,7 @@ In any page or post, use emoji as you would normally, e.g.
 I give this plugin two :thumbs_up:!
 ```
 
-with this plugin, Jekyll will turn this markdown code `:thumbs_up:` into this image:
+with this plugin, Jekyll will turn this markdown code (aka emoji alias) `:thumbs_up:` into this image:
 <img class="emoji" title="thumbs_up" alt="👍️" src="https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f44d-fe0f.svg" width="30em" height="30em" margin="0.5em"> .
 
 to see all codes and their emoji images, see preview [**page**][preview].
@@ -174,8 +177,10 @@ However you can alter the default path in `_config.yml` to serve from external s
 
 ### Notes
 
-Emoji files names should be lowercase unicode strings, for example name of this
-emoji 😄 image file must be: 1f604
+* Your external image source must be compatible with this plugin in order to show emojis correctly, 
+for example: 
+  * emoji files names should be lowercase unicode strings, so that this
+emoji 😄 image file must be: 1f604 followed by its extension (here png), final file name would be 1f604.png
 
 ## Contribution
 

@@ -25,16 +25,16 @@ Gem::Specification.new do |spec|
   spec.test_files = spec.files.grep(%r!^test/!)
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = ">= 2.3.0"
+  spec.required_ruby_version = ">= 2.7.2"
 
-  spec.add_dependency "html-pipeline", "~> 2.12"
-  spec.add_dependency "html-pipeline-negarmoji", "~> 0.1.5"
+  spec.add_dependency "html-pipeline", "~> 2.14"
+  spec.add_dependency "html-pipeline-negarmoji", "~> 0.1.6"
   spec.add_dependency "jekyll", ">= 3.0", "< 5.0"
-  spec.add_dependency "negarmoji", "~> 0.1.9"
+  spec.add_dependency "negarmoji", "~> 0.1.10"
 
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rubocop-jekyll", "~> 0.10"
-  spec.add_development_dependency "simplecov", "~> 0.17.0"
+  spec.add_development_dependency "bundler", "~> 2.2.3"
+  spec.add_development_dependency "rake", "~> 13.0.6"
+  spec.add_development_dependency "rspec", "~> 3.10"
+  spec.add_development_dependency "rubocop", "~> 1.18.3"
+  spec.add_development_dependency "simplecov", "~> 0.21.2"
 end

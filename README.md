@@ -56,7 +56,7 @@
   <br>
 
   <a title="OpenMoji Version" href="https://github.com/hfg-gmuend/openmoji/releases">
-    <img src="https://img.shields.io/github/v/release/hfg-gmuend/openmoji?color=red&label=OpenMoji&logo=github&sort=semver&style=flat-square" alt="OpenMoji Version">
+    <img src="https://img.shields.io/static/v1?label=OpenMoji&message=v13.1.0&logo=github&color=red&style=flat-square" alt="OpenMoji Version">
   </a>
   <a title="Gem Version" href="https://rubygems.org/gems/jekyll-openmoji">
     <img src="https://img.shields.io/gem/v/jekyll-openmoji?color=red&label=Jekyll%20OpenMoji&logo=rubygems&style=flat-square" alt="Gem Version">

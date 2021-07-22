@@ -10,16 +10,17 @@ default:
   cache:
     paths:
       - vendor/
-# job for testing package against ruby version 2.6
+
+# job for testing package against default ruby version
 # on master branch and send test coverage result to
 # codeclimate.
-test main branch:
+test master branch defaut:
   stage: test
   before_script:
     # setup rbenv.
     - source ~/.bash_profile
-    # use ruby version 2.7.0 .
-    - rbenv global 2.7.0
+    # use default ruby version.
+    - rbenv global 3.0.0
     # install dependency gems.
     - bundle config set path 'vendor'
     - bundle install
@@ -27,87 +28,98 @@ test main branch:
     - cc-test-reporter before-build
   # run tests.
   script:
-    - script/test.sh
+    - cd script && ./test.sh
   # send test coverage result to codeclimate.
   after_script:
     - cc-test-reporter after-build --coverage-input-type simplecov
   only:
     - master
 
-# job for testing package on other branches than master
-# and merge requests against 2.7.0 version.
-test ruby 2.7.0:
+# job for testing package on mon master branch
+# and merge requests against other ruby versions.
+test master branch ruby 2.7.2:
   stage: test
   before_script:
     # setup rbenv.
     - source ~/.bash_profile
-    # use ruby version 2.7.0 .
-    - rbenv global 2.7.0
+    # use custom ruby version.
+    - rbenv global 2.7.2
     # install dependency gems.
     - bundle config set path 'vendor'
     - bundle install
   # run tests.
   script:
-    - script/test.sh
+    - cd script && ./test.sh
+  only:
+    - master
+
+# job for testing package on other branches than master
+# and merge requests against default version.
+test branch ruby default:
+  stage: test
+  before_script:
+    # setup rbenv.
+    - source ~/.bash_profile
+    # use default ruby version.
+    - rbenv global 3.0.0
+    # install dependency gems.
+    - bundle config set path 'vendor'
+    - bundle install
+  # run tests.
+  script:
+    - cd script && ./test.sh
   only:
     - branches
     - merge_requests
   except:
     - master
 
-# jobs for testing package against older ruby versions.
-test ruby 2.6.5:
+# job for testing package on other branches than master
+# and merge requests against other ruby versions.
+test branch ruby 2.7.2:
   stage: test
   before_script:
     # setup rbenv.
     - source ~/.bash_profile
-    # use ruby version 2.6.5 .
-    - rbenv global 2.6.5
+    # use custom ruby version.
+    - rbenv global 2.7.2
     # install dependency gems.
     - bundle config set path 'vendor'
     - bundle install
   # run tests.
   script:
-    - script/test.sh
+    - cd script && ./test.sh
+  only:
+    - branches
+    - merge_requests
   except:
-    - tags
-
-test ruby 2.5.7:
-  stage: test
-  before_script:
-    # setup rbenv.
-    - source ~/.bash_profile
-    # use ruby version 2.5.7 .
-    - rbenv global 2.5.7
-    # install dependency gems.
-    - bundle config set path 'vendor'
-    - bundle install
-  # run tests.
-  script:
-    - script/test.sh
-  except:
-    - tags
+    - master
 
 # release a preview blog for master branch with gitlab pages.
 pages:
   stage: deploy
-  script:
+  before_script:
     # setup rbenv.
     - source ~/.bash_profile
-    # use ruby version 2.7.0
-    - rbenv global 2.7.0
+    # use ruby version 3.0.0 .
+    - rbenv global 3.0.0
+    # delete and recreate directory.
+    - rm --force --recursive public
+    - mkdir public
     # go to blog folder.
     - cd doc/blog
     # install dependency gems.
     - bundle config set path 'vendor'
     - bundle install
+  script:
     # generate site with jekyll.
-    - bundle exec jekyll build --trace --destination ../../public
+    - bundle exec jekyll build --trace --config ./_config.yml --destination ../../public
   artifacts:
     paths:
       - public
+    expire_in: 7 days
   only:
-    - master
+    - tags
   when: manual
 
 # deploy gems to rubygems.org whenever a tag is released.
@@ -116,8 +128,8 @@ release to rubygems:
   script:
     # setup rbenv.
     - source ~/.bash_profile
-    # use ruby version 2.7.0
-    - rbenv global 2.7.0
+    # use default ruby version.
+    - rbenv global 3.0.0
     # create rubygems credential file for auto login.
     - script/ci_rubygems.sh
     # extract tag from git log and strip "v".

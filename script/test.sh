@@ -6,6 +6,11 @@
 # set flag for shell execution.
 # -e  Exit immediately if a command exits with a non-zero status.
 # -x  Print commands and their arguments as they are executed.
-set -ex
+set -e
 
-script/test_module.sh || ./test_module.sh
+# files for testing.
+JOP_RB="../lib/jekyll-openmoji.rb"
+PLUGIN_RB="../lib/jekyll-openmoji/plugin.rb"
+VERSION_RB="../lib/jekyll-openmoji/version.rb"
+
+./test_module.sh "${JOP_RB}" "${PLUGIN_RB}" "${VERSION_RB}"
